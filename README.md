@@ -46,5 +46,5 @@ npm run test
 
 **Ссылка**
 
-* [Ссылка на сайт](https://aksenov-m.github.io/photo-studio/)
+* [Ссылка на сайт](https://aksenov-m.github.io/hackathon-Yandex/)
 * [Ссылка на МАКЕТ](https://www.figma.com/)
