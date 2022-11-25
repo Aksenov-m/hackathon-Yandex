@@ -1,7 +1,30 @@
 # hackathon-Yandex
+---
 
-## CLI Commands
+### Описание: 
+Лэндинг в рамках первого хакатон от Яндекс Практикума. 
+Страничка на которой рассказывается о вакансиях экспертов сопровождения и работе в Яндекс Практикуме.
 
+Авторы проекта
+🎨 design: 
+Гильфанова Эльвира
+Каширина Анастасия
+Саберова Гюзель
+🔨 web:
+[Миколайчук Дарья](https://github.com/dashimiko)
+[Шмелева Екатерина](https://github.com/dashimiko?tab=repositories)
+[Аксенов Михаил](https://aksenov-m.github.io/resume/)
+
+### Технологический стек
+* :point_right: PREACT
+* :point_right: HTML
+* :point_right: CSS
+* :point_right: Flex верстка
+* :point_right: Grid верстка
+* :point_right: Файловая структура по БЭМ
+---
+
+## Запуск проекта
 ``` bash
 # install dependencies
 npm install
@@ -19,4 +42,9 @@ npm run serve
 npm run test
 ```
 
-For detailed explanation on how things work, checkout the [CLI Readme](https://github.com/developit/preact-cli/blob/master/README.md).
+##### версия языка: :ru:
+
+**Ссылка**
+
+* [Ссылка на сайт](https://aksenov-m.github.io/photo-studio/)
+* [Ссылка на МАКЕТ](https://www.figma.com/)
