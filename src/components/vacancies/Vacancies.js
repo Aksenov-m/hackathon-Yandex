@@ -4,11 +4,16 @@ import {VACANCY_CARDS} from '../../utils/contsants';
 
 const Vacancies = () => {
 
-  const [filtered, setFiltered] = useState(VACANCY_CARDS)
+  const [filtered, setFiltered] = useState(VACANCY_CARDS);
+  const [notFound, setNotFound] = useState(false);
 
   function vacancyFilter(status) {
     const NEW_VACANCY_CARDS = [...VACANCY_CARDS].filter(item => item.status === status);
     setFiltered(NEW_VACANCY_CARDS);
+    setNotFound(false);
+    if(NEW_VACANCY_CARDS.length === 0){
+      setNotFound(true);
+    }
   }
 
   return (
@@ -28,14 +33,26 @@ const Vacancies = () => {
         <li class='item' onClick={()=>vacancyFilter(33)}>
           33
         </li>
+        <li class='item' onClick={()=>vacancyFilter(44)}>
+          44
+        </li>
       </ul>
     </nav>
 
     <div>
 
-    {filtered.map(card => (
+    {notFound ?
+
+    <div>
+      <p>Ничего не найдено</p>
+    </div>
+
+    :
+
+    filtered.map(card => (
       <VacancyCard key={card.id} text={card.text} description={card.description} />
-    ))}
+    ))
+    }
     </div>
 	</div>
 );
