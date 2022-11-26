@@ -1,0 +1,11 @@
+.item-field{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.item{
+  width: 100px;
+  background-color: cadetblue;
+}
+
