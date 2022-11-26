@@ -12,7 +12,7 @@
 Саберова Гюзель
 🔨 web:
 [Миколайчук Дарья](https://github.com/dashimiko)
-[Шмелева Екатерина](https://github.com/dashimiko?tab=repositories)
+[Шмелева Екатерина](https://github.com/gutkati)
 [Аксенов Михаил](https://aksenov-m.github.io/resume/)
 
 ### Технологический стек
