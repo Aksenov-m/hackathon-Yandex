@@ -1,0 +1,5 @@
+@font-face {
+  font-family: 'YsText-Regular';
+  src: url(./YsText-Regular.woff) format('woff'),
+  url(./YsText-Regular.woff2) format('woff2')
+}
