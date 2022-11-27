@@ -1,10 +1,19 @@
 import { h } from 'preact';
 
+import Greetings from '../Greetings/Greetings';
+import Skills from '../Skills/Skills';
+import Vacancies from '../Vacancies/Vacancies';
+import Сomment from '../Сomment/Сomment';
+import Questions from '../Questions/Questions';
+
 const Main = () => (
-	<div class='main' id='main'>
-		<h1>Main</h1>
-		<p>This is the Main component.</p>
-	</div>
+  <>
+	<Greetings />
+  <Skills />
+  <Vacancies />
+  <Сomment />
+  <Questions />
+  </>
 );
 
 export default Main;

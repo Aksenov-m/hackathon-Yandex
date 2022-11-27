@@ -3,4 +3,9 @@
 @import url(../components/app/App.css);
 @import url(../components/header/Header.css);
 @import url(../components/main/Main.css);
+@import url(../components/Greetings/Greetings.css);
+@import url(../components/Skills/Skills.css);
+@import url(../components/Vacancies/Vacancies.css);
+@import url(../components/Сomment/Сomment.css);
+@import url(../components/Questions/Questions.css);
 @import url(../components/footer/Footer.css);
