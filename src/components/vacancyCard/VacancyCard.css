@@ -1,12 +1,88 @@
 .vacancy-card {
-  width: 300px;
-  height: 300px;
-  background-color: bisque;
+  width:  357px;
+  height: 251px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding: 0 20px;
   opacity: 0;
   animation: ani 0.5s forwards;
+  position: relative;
+}
+.vacancy-card__container{
+}
+
+.vacancy-card__title{
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 29px;
+  margin: 49px 0 27px;
+  color: #181818;
+  max-width: 317px;
+}
+
+.vacancy-card__amount{
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #969696;
+  margin: 0;
+}
+
+.vacancy-card__button{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  text-decoration: underline;
+  border: none;
+  background-color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+.vacancy-card__box{
+  margin: 35px 0 41px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vacancy-card__views{
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #969696;
+  width: 18px;
+  height: 18px;
+  position: relative;
+}
+
+.vacancy-card__views::after {
+  width: 18px;
+  height: 12px;
+  background-image: url(../../images/viewsVector.svg);
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 15px;
+}
+
+.vacancy-card__share{
+  background-image: url(../../images/shareVector.svg);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  top: 20px;
+  right: 16px;
 }
 
 @keyframes ani {
   0% {opacity: 0;}
   100% {opacity: 1;}
 }
+

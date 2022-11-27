@@ -3,6 +3,11 @@
 @import url(../components/app/App.css);
 @import url(../components/header/Header.css);
 @import url(../components/main/Main.css);
+@import url(../components/Greetings/Greetings.css);
+@import url(../components/Skills/Skills.css);
+@import url(../components/vacancies/Vacancies.css);
+@import url(../components/Сomment/Comment.css);
+@import url(../components/Questions/Questions.css);
 @import url(../components/footer/Footer.css);
 @import url(../components/vacancyCard/VacancyCard.css);
-@import url(../components/vacancies/Vacancies.css);
+@import url(../components/VacancyNavbar/VacancyNavbar.css);
