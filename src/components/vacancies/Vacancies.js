@@ -1,17 +1,20 @@
 import { useState} from 'preact/hooks';
 import VacancyCard from '../vacancyCard/VacancyCard';
-import {VACANCY_CARDS} from '../../utils/contsants';
+import {VACANCY_CARDS_MASTER, VACANCY_CARDS_REWIEWER} from '../../utils/constantsVacancies.js';
 
 const Vacancies = () => {
 
-  const [filtered, setFiltered] = useState(VACANCY_CARDS);
+  const [filteredMaster, setFilteredMaster] = useState(VACANCY_CARDS_MASTER);
+  const [filteredRewier, setFilteredRewier] = useState(VACANCY_CARDS_REWIEWER);
   const [notFound, setNotFound] = useState(false);
 
-  function vacancyFilter(status) {
-    const NEW_VACANCY_CARDS = [...VACANCY_CARDS].filter(item => item.status === status);
-    setFiltered(NEW_VACANCY_CARDS);
+  function vacancyFilter(argument) {
+    const NEW_VACANCY_CARDS_MASTER = [...VACANCY_CARDS_MASTER].filter(item => item.status === argument);
+    const NEW_VACANCY_CARDS__REWIEWER = [...VACANCY_CARDS_REWIEWER].filter(item => item.status === argument);
+    setFilteredMaster(NEW_VACANCY_CARDS_MASTER);
+    setFilteredRewier(NEW_VACANCY_CARDS__REWIEWER)
     setNotFound(false);
-    if(NEW_VACANCY_CARDS.length === 0){
+    if(NEW_VACANCY_CARDS_MASTER.length === 0 || NEW_VACANCY_CARDS__REWIEWER === 0){
       setNotFound(true);
     }
   }
@@ -23,6 +26,17 @@ const Vacancies = () => {
 		<p>This is the Vacancies component.</p>
 
     <nav>
+      <ul class='item-field'>
+        <li class='item'>
+          наставник
+        </li>
+        <li class='item'>
+          ревьюер
+        </li>
+      </ul>
+    </nav>
+
+      <nav>
       <ul class='item-field'>
         <li class='item' onClick={()=>vacancyFilter(11)}>
           11
@@ -48,10 +62,19 @@ const Vacancies = () => {
     </div>
 
     :
-
-    filtered.map(card => (
+<>
+    <div>
+      {filteredRewier.map(card => (
       <VacancyCard key={card.id} text={card.text} description={card.description} />
-    ))
+    ))}
+    </div>
+
+    <div>
+      {filteredMaster.map(card => (
+    <VacancyCard key={card.id} text={card.text} description={card.description} />
+  ))}
+    </div>
+</>
     }
     </div>
 	</div>
