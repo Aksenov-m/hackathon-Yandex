@@ -8,8 +8,6 @@
   animation: ani 0.5s forwards;
   position: relative;
 }
-.vacancy-card__container{
-}
 
 .vacancy-card__title{
   font-weight: 500;
