@@ -1,0 +1,18 @@
+.tabSkills__text {
+  padding: 15px 35px;
+  box-sizing: border-box;
+  border-radius: 50px;
+  border: 1px solid #474747;
+  background: transparent;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.tabSkills {
+
+}
+
+.tabSkills__text:hover {
+  background: #474747;
+  color: #FFFFFF;
+}

@@ -6,6 +6,9 @@
 @import url(../components/Greetings/Greetings.css);
 @import url(../components/Skills/Skills.css);
 @import url(../components/Vacancies/Vacancies.css);
-@import url(../components/Сomment/Сomment.css);
+@import url(../components/Сomment/Comment.css);
 @import url(../components/Questions/Questions.css);
 @import url(../components/footer/Footer.css);
+@import url(../components/TabSkills/TabSkills.css);
+@import url(../components/blockDescription/BlockDescription.css);
+@import url(../components/PopupWithForm/PopupWithForm.css);
