@@ -1,0 +1,77 @@
+.vacancies {
+  padding-top: 50px;
+  padding-bottom: 111px;
+  width: 100%;
+  background-color: #F5F5F5;
+}
+
+.vacancies__box{
+  max-width: 1112px;
+  /*margin: 0 auto;*/
+}
+
+.vacancies__title{
+  margin: 0;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  color: #181818;
+}
+
+.vacancies__button{
+  margin: 50px 0 0 0;
+  position: relative;
+  border: none;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  padding: 10px 0;
+}
+
+.vacancies__bitton_rewiew{
+  max-width: 287px;
+}
+
+.vacancies__button_master{
+  max-width:283px
+}
+
+.vacancies__button::after{
+  width: 25px;
+  height: 14px;
+  background-image: url(../../images/vacancies.svg);
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: -35px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.vacancies__button-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.vacancies__card-list{
+  display: flex;
+  flex-direction: row;
+  gap: 19px;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.vacancies__more{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  margin: 19px auto 0;
+}
