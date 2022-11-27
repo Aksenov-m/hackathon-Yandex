@@ -7,28 +7,28 @@ export const VACANCY_CARDS_MASTER = [
     who: 'наставник'
   },
   {
-    id: 3,
+    id: 2,
     text: 'наставник',
     description: '2222',
     status: 22,
     who: 'наставник',
   },
   {
-    id: 6,
+    id: 3,
     text: 'наставник',
     description: '3333',
     status: 33,
     who: 'наставник',
   },
   {
-    id: 6,
+    id: 4,
     text: 'наставник',
     description: '3333',
     status: 33,
     who: 'наставник',
   },
   {
-    id: 6,
+    id: 5,
     text: 'наставник',
     description: '3333',
     status: 33,
@@ -45,21 +45,21 @@ export const VACANCY_CARDS_MASTER = [
 
 export const VACANCY_CARDS_REWIEWER = [
   {
-    id: 2,
+    id: 1,
     text: 'ревьер',
     description: '1111',
     status: 11,
     who: 'ревьер',
   },
   {
-    id: 4,
+    id: 2,
     text: 'ревьер',
     description: '3333',
     status: 33,
     who: 'ревьер',
   },
   {
-    id: 5,
+    id: 3,
     text: 'ревьер',
     description: '333',
     status: 33,
@@ -73,14 +73,14 @@ export const VACANCY_CARDS_REWIEWER = [
     who: 'ревьер',
   },
   {
-    id: 4,
+    id: 5,
     text: 'ревьер',
     description: '3333',
     status: 33,
     who: 'ревьер',
   },
   {
-    id: 4,
+    id: 6,
     text: 'ревьер',
     description: '3333',
     status: 33,

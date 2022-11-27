@@ -7,6 +7,8 @@ const Vacancies = () => {
   const [filteredMaster, setFilteredMaster] = useState(VACANCY_CARDS_MASTER);
   const [filteredRewier, setFilteredRewier] = useState(VACANCY_CARDS_REWIEWER);
   const [notFound, setNotFound] = useState(false);
+  const [mentor, setmentor] = useState(true);
+  const [rewiew, setrewiew] = useState(false);
 
   function vacancyFilter(argument) {
     const NEW_VACANCY_CARDS_MASTER = [...VACANCY_CARDS_MASTER].filter(item => item.status === argument);
@@ -19,6 +21,22 @@ const Vacancies = () => {
     }
   }
 
+  function vacancyFilterProf1(){
+    if (!mentor) {
+      setmentor(true)
+    } else {
+    setmentor(false)
+    }
+  }
+
+  function vacancyFilterProf2(){
+    if (!rewiew) {
+      setrewiew(true)
+    } else {
+    setrewiew(false)
+    }
+  }
+
   return (
 
 	<div class ="footer" id="footer">
@@ -27,10 +45,10 @@ const Vacancies = () => {
 
     <nav>
       <ul class='item-field'>
-        <li class='item'>
+        <li class='item' onClick={()=>vacancyFilterProf1()}>
           наставник
         </li>
-        <li class='item'>
+        <li class='item' onClick={()=>vacancyFilterProf2()}>
           ревьюер
         </li>
       </ul>
@@ -64,13 +82,13 @@ const Vacancies = () => {
     :
 <>
     <div>
-      {filteredRewier.map(card => (
+      {rewiew && filteredRewier.map(card => (
       <VacancyCard key={card.id} text={card.text} description={card.description} />
     ))}
     </div>
 
     <div>
-      {filteredMaster.map(card => (
+      {mentor && filteredMaster.map(card => (
     <VacancyCard key={card.id} text={card.text} description={card.description} />
   ))}
     </div>
