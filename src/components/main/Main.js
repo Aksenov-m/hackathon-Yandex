@@ -6,7 +6,8 @@ import Vacancies from '../Vacancies/Vacancies';
 import Сomment from '../Сomment/Сomment';
 import Questions from '../Questions/Questions';
 import Benefits from '../Benefits/Benefits';
-import NotFound from '../NotFound/NotFound'
+import NotFound from '../NotFound/NotFound';
+import HowBeExpert from '../HowBeExpert/HowBeExpert';
 
 const Main = () => (
   <>
@@ -17,6 +18,7 @@ const Main = () => (
   <NotFound />
   <Сomment />
   <Questions />
+  <HowBeExpert />
   </>
 );
 

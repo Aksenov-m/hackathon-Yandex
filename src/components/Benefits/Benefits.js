@@ -3,7 +3,7 @@ import { h } from 'preact';
 const Benefits = () => (
 	<section class ="benefits app__margins">
     <div class ="benefits__box">
-      <h2 class ="benefits__title">Преимущества работы у нас</h2>
+      <h2 class ="benefits__title">С нами интересно и полезно</h2>
       <ul class='benefits__list'>
         <li class='benefits__item'>
           <div class='benefits__icon' />

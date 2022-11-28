@@ -1,5 +1,4 @@
 .benefits{
-  padding-top: 50px;
   padding-bottom: 100px;
   width: 100%;
   background-color: #F5F5F5;
@@ -12,9 +11,9 @@
 
 .benefits__title{
   font-weight: 500;
-  font-size: 32px;
-  line-height: 38px;
-  margin: 0 0 61px 0;
+  font-size: 48px;
+  line-height: 56px;
+  margin: 42px 0 52px 0;
 }
 
 .benefits__list{
@@ -32,6 +31,9 @@
   display: flex;
   flex-direction: column;
   width: 357px;
+  justify-content: space-between;
+  background: #FFFFFF;
+  border-radius: 10px;
 }
 
 .benefits__icon{

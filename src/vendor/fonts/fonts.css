@@ -1,5 +1,15 @@
 @font-face {
-  font-family: 'YsText-Regular';
-  src: url(./YsText-Regular.woff) format('woff'),
-  url(./YsText-Regular.woff2) format('woff2')
+  font-family: 'YsDisplay';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./YSDisplayRegular.woff2) format('woff2'),
+       url(./YSDisplayRegular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'YsDisplay';;
+  font-style:  normal;
+  font-weight: 500;
+  src: url(./YSDisplayMedium.woff2) format("woff2"),
+       url(./YSDisplayMedium.woff) format("woff");
 }

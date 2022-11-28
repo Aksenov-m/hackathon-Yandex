@@ -1,0 +1,69 @@
+.how-become{
+  padding-top: 27px;
+  padding-bottom: 100px;
+  width: 100%;
+  background-color:  #FFFFFF;;
+}
+
+.how-become__box{
+  max-width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.how-become__picture{
+  width: 542px;
+  height: 340px;
+  margin: 47px 0 13px 0;
+  background-image: url(../../images/tobeexpert.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.how-become__list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  gap: 20px;
+}
+
+.how-become__item-picture{
+  width: 46px;
+  height: 46px;
+  background-image: url(../../images/listicon1.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 22px;
+}
+
+.how-become__item-picture_icon-two{
+  background-image: url(../../images/listicon2.svg);
+}
+
+.how-become__item-picture_icon-three{
+  background-image: url(../../images/listicon3.svg);
+}
+
+.how-become__item-text{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.how-become__title{
+  margin: 50px 0 45px 0;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.how-become__item{
+  display: flex;
+  align-items: center;
+}
