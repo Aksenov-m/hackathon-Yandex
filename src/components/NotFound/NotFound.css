@@ -1,12 +1,11 @@
 .not-found {
-  /*width: 100%;*/
-  max-width: 1111px;
+  width: 100%;
   background-color: #F5F5F5;
 }
 
 .not-found__box{
-  max-width: 1111px;
-  /*margin: 0 auto;*/
+  max-width: 1110px;
+  margin: 0 auto;
 }
 
 .not-found__title{

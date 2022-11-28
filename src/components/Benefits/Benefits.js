@@ -1,7 +1,7 @@
 import { h } from 'preact';
 
 const Benefits = () => (
-	<section class ="benefits">
+	<section class ="benefits app__margins">
     <div class ="benefits__box">
       <h2 class ="benefits__title">Преимущества работы у нас</h2>
       <ul class='benefits__list'>

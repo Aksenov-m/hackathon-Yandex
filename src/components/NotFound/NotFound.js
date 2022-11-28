@@ -1,7 +1,7 @@
 import { h } from 'preact';
 
 const NotFound = () => (
-	<section class ="not-found">
+	<section class ="not-found app__margins">
     <div class ="not-found__box">
       <div class='not-found__group'>
         <h2 class ="not-found__title">Не нашли себя?</h2>

@@ -1,14 +1,14 @@
 .vacancies {
   padding-top: 50px;
   padding-bottom: 111px;
-  /*width: 100%;*/
-  max-width: 1111px;
+  width: 100%;
+  /*max-width: 1111px*/
   background-color: #F5F5F5;
 }
 
 .vacancies__box{
-  max-width: 1111px;
-  /*margin: 0 auto;*/
+  max-width: 1110px;
+  margin: 0 auto;
 }
 
 .vacancies__title{

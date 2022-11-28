@@ -53,7 +53,7 @@ const Vacancies = () => {
 
   return (
 
-  <section class ="vacancies" id="vacancies">
+  <section class ="vacancies app__margins" id="vacancies">
     <div class='vacancies__box'>
       <h1 class='vacancies__title'>Вакансии</h1>
       <div class='vacancies__button-box'>
