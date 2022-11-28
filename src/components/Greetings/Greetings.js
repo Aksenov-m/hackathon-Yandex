@@ -44,14 +44,14 @@ function Greetings() {
         <div class="subtitle__container">
           <span class="greetings__subtitle" ref={el}  />
         </div>
-        <p class="greetings__paragraph">Ищем наставников и ревьюверов</p>
+        <p class="greetings__paragraph">Станьте наставником или ревьюером для студентов, которые пришли связать свою жизнь с IT</p>
         <ButtonLink
           href="#vacancies"
           Class="greetings__link"
-          text="Хочу делиться опытом"
+          text="Уже хочу делиться опытом!"
         />
       </article>
-      <img className="greetings__image" src={foto} alt="Фото." />
+      <img className="greetings__image" src={foto} alt="Фото иллюстрация." />
     </section>
   );
 }

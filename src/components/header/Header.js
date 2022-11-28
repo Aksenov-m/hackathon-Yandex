@@ -1,15 +1,14 @@
 import { h } from 'preact';
 
-import logo from "../../imagesA/Logo_n.svg";
 import Navigation from "../Navigation/Navigation";
-//import { Link } from 'preact-router/match';
+import Logo from "../Logo/Logo";
 
 function Header (props) {
 
   return (
 	<header class='header' id="header">
 		<a class='header__link' href="https://practicum.yandex.ru/" target='_blank' rel="noreferrer">
-      <img class='header__logo' src={logo} alt='Логотип.' />
+    <Logo Class="header__logo" />
     </a>
     <Navigation {...props} />
 		{/* <nav>
