@@ -1,25 +1,63 @@
-import {h} from 'preact';
+import { useState } from 'preact/hooks';
 import TabSkills from "../TabSkills/TabSkills";
 import BlockDescription from "../blockDescription/BlockDescription";
+import PopupInterview from "../PopupInterview/PopupInterview";
 
 const Skills = () => {
+
+  const [isOpenPopupInterview, setIsOpenPopupInterview] = useState(false)
+  // eslint-disable-next-line no-unused-vars
+  const [isActive, setIsActive] = useState(false)
+  const profs = [
+    'Веб-разработка',
+    'Дизайн-интерфейсов',
+    'Аналитик данных',
+    'Менеджер проектов',
+    'Менеджер по интернет-маркетингу',
+    'Data scientist',
+    'Тестировщик',
+    'Менеджер проектов'
+  ]
+
+  //const [prof, setProf] = useState(1)
+
+  const openPopup = () => {
+    setIsOpenPopupInterview(true)
+  }
+
+  const closeAllPopup = () => {
+    setIsOpenPopupInterview(false)
+  }
+
+  const activeBtn = (prof) => {
+    if(profs.prof === prof) {
+      setIsActive(true)
+      //setProf(prof)
+    } else {
+      setIsActive(false)
+    }
+
+  }
+
   return (
-    <div className='skills'>
+    <section className='skills'>
       <div className='skills__main'>
         <h2 className='skills__title'>Наставник или ревьюер?</h2>
-        <p className='skills__link'>Пройдите <a className='skills__interview' href="#">опрос</a>, если сложно решить</p>
+        <p className='skills__link'>Пройдите <a className='skills__interview' href="#" onClick={openPopup}>опрос</a>, если сложно решить</p>
 
         <div className='skills__container-tab'>
           <div className='skills__section-tabBtn'>
             <ul className='skills__list'>
-              <TabSkills title={'Веб-разработка'} />
-              <TabSkills title={'Дизайн-интерфейсов'} />
-              <TabSkills title={'Аналитик данных'} />
-              <TabSkills title={'Менеджер проектов'} />
-              <TabSkills title={'Менеджер по интернет-маркетингу'} />
-              <TabSkills title={'Data scientist'} />
-              <TabSkills title={'Тестировщик'} />
-              <TabSkills title={'Менеджер проектов'} />
+                {profs.map(prof =>
+                  <TabSkills
+                    prof={prof}
+                    key={prof}
+                    //active={profs.prof === prof}
+                    isActive={isActive}
+                    onClick={activeBtn}
+                  />
+
+                )}
             </ul>
           </div>
           <div className='skills__section-description'>
@@ -112,8 +150,22 @@ const Skills = () => {
 
 
       </div>
-    </div>
+
+      <PopupInterview
+        isOpen={isOpenPopupInterview}
+        onClose={closeAllPopup}
+      />
+    </section>
   );
 }
 
 export default Skills;
+
+// <TabSkills title={'Веб-разработка'} />
+//               <TabSkills title={'Дизайн-интерфейсов'} />
+//               <TabSkills title={'Аналитик данных'} />
+//               <TabSkills title={'Менеджер проектов'} />
+//               <TabSkills title={'Менеджер по интернет-маркетингу'} />
+//               <TabSkills title={'Data scientist'} />
+//               <TabSkills title={'Тестировщик'} />
+//               <TabSkills title={'Менеджер проектов'} />

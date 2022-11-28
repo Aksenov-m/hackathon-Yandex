@@ -6,11 +6,11 @@ import Main from "../main/Main";
 
 const App = () => (
   <div id="app">
-    <>
+    <div className='app__root'>
       <Header />
       <Main />
       <Footer />
-    </>
+    </div>
   </div>
 );
 

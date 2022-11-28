@@ -6,13 +6,15 @@
   background: transparent;
   margin-bottom: 30px;
   cursor: pointer;
+  text-align: left;
 }
 
 .tabSkills {
 
 }
 
-.tabSkills__text:hover {
+.tabSkills__text-active {
   background: #474747;
   color: #FFFFFF;
+
 }

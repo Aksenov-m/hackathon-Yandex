@@ -18,13 +18,19 @@ body {
 }
 
 #app {
-  height: 100%;
   min-height: 100vh;
-  min-width: 380px;
-  max-width: 1440px;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  margin-left: 165px;
-  margin-right: 165px;
+    width: 100%;
+    margin: 0 auto;
 }
+
+/*#app {*/
+/*  height: 100%;*/
+/*  min-height: 100vh;*/
+/*  min-width: 380px;*/
+/*  max-width: 1440px;*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  margin: 0 auto;*/
+/*  margin-left: 165px;*/
+/*  margin-right: 165px;*/
+/*}*/
