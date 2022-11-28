@@ -350,8 +350,8 @@ template {
 
 @font-face {
   font-family: 'YsText-Regular';
-  src: url(/d12a91b5a1cec2ae349364b933550017.woff) format('woff'),
-  url(/bcd43d382b4ff8fabac8322ed8c8975a.woff2) format('woff2')
+  src: url(/hackathon-Yandex/d12a91b5a1cec2ae349364b933550017.woff) format('woff'),
+  url(/hackathon-Yandex/bcd43d382b4ff8fabac8322ed8c8975a.woff2) format('woff2')
 }
 
 html,
@@ -763,7 +763,7 @@ body {
 .vacancies__button::after{
   width: 25px;
   height: 14px;
-  background-image: url(/05bc094618b4ee7346022efce500e035.svg);
+  background-image: url(/hackathon-Yandex/05bc094618b4ee7346022efce500e035.svg);
   content: "";
   position: absolute;
   background-repeat: no-repeat;
@@ -883,7 +883,7 @@ body {
     border: none;
     padding: 0;
     background-color: transparent;
-    background-image: url(/2ceb783afbab75916ddcbb98f868ff01.svg);
+    background-image: url(/hackathon-Yandex/2ceb783afbab75916ddcbb98f868ff01.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 32px;
@@ -997,7 +997,7 @@ body {
 .vacancy-card__views::after {
   width: 18px;
   height: 12px;
-  background-image: url(/ce5d328c435cf7cb7adafcf9a28ad6de.svg);
+  background-image: url(/hackathon-Yandex/ce5d328c435cf7cb7adafcf9a28ad6de.svg);
   content: "";
   background-repeat: no-repeat;
   background-size: contain;
@@ -1009,7 +1009,7 @@ body {
 }
 
 .vacancy-card__share{
-  background-image: url(/00907efeb359584ee6fff965f5896676.svg);
+  background-image: url(/hackathon-Yandex/00907efeb359584ee6fff965f5896676.svg);
   position: absolute;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1170,4 +1170,4 @@ body {
 
 
 
-/*# sourceMappingURL=ssr-bundle.ab242.css.map*/
+/*# sourceMappingURL=ssr-bundle.9e8c4.css.map*/
