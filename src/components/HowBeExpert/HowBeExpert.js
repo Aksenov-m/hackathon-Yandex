@@ -7,17 +7,13 @@ const HowBeExpert = () => (
         <h2 class="how-become__title">Как стать экспертом?</h2>
         <ul class="how-become__list">
           <li class="how-become__item">
-            <div class='how-become__item-picture_icon-three how-become__item-picture' />
-            <p class='how-become__item-text'>Выберите роль и заполните заявку</p>
+            <p class='how-become__item-text'>1. Выберите роль и заполните заявку</p>
           </li>
           <li class="how-become__item">
-          <div class='how-become__item-picture' />
-            <p class='how-become__item-text'>Пройдите отбор и бесплатное обучение</p>
+            <p class='how-become__item-text'>2. Пройдите отбор и бесплатное обучение</p>
           </li>
           <li class="how-become__item">
-          <div class='how-become__item-picture_icon-two how-become__item-picture' />
-            <p class='how-become__item-text'>Начните делиться знаниями со
-студентами Яндекс Практикума</p>
+            <p class='how-become__item-text'>3. Начните делиться знаниями со студентами Яндекс Практикума</p>
           </li>
         </ul>
       </div>

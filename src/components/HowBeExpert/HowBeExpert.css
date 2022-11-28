@@ -2,7 +2,7 @@
   padding-top: 27px;
   padding-bottom: 100px;
   width: 100%;
-  background-color:  #FFFFFF;;
+  background-color:  #FFFFFF;
 }
 
 .how-become__box{
@@ -10,13 +10,12 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  gap: 20px;
 }
 
 .how-become__picture{
   width: 542px;
   height: 340px;
-  margin: 47px 0 13px 0;
+  margin: 0 0 6px 0;
   background-image: url(../../images/tobeexpert.png);
   background-repeat: no-repeat;
   background-size: contain;

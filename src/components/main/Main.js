@@ -8,6 +8,7 @@ import Questions from '../Questions/Questions';
 import Benefits from '../Benefits/Benefits';
 import NotFound from '../NotFound/NotFound';
 import HowBeExpert from '../HowBeExpert/HowBeExpert';
+import Stories from '../Stories/Stories'
 
 const Main = () => (
   <>
@@ -19,6 +20,7 @@ const Main = () => (
   <Сomment />
   <Questions />
   <HowBeExpert />
+  <Stories />
   </>
 );
 
