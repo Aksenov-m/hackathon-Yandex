@@ -6,6 +6,7 @@ import Vacancies from '../Vacancies/Vacancies';
 import Сomment from '../Сomment/Сomment';
 import Questions from '../Questions/Questions';
 import Benefits from '../Benefits/Benefits';
+import NotFound from '../NotFound/NotFound'
 
 const Main = () => (
   <>
@@ -13,6 +14,7 @@ const Main = () => (
   <Skills />
   <Vacancies />
   <Benefits />
+  <NotFound />
   <Сomment />
   <Questions />
   </>

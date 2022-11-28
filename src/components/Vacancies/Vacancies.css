@@ -64,7 +64,7 @@
   gap: 19px;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 
 .vacancies__more{
