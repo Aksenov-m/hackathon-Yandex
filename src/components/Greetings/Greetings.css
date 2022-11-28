@@ -1,11 +1,12 @@
 .greetings {
+  max-width: 1440px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
   background-color: rgba(121, 96, 96, 0.11);
   border-radius: 20px;
-  margin: 56px 165px 0 165px;
+  margin: 0 165px 0 165px;
   padding: 28px 35px 28px 50px;
 }
 

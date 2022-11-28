@@ -37,26 +37,8 @@ function Greetings() {
     };
   }, []);
 
-  // const el = useRef(null);
-
-  // useEffect(() => {
-  //   const typed = new Typed(el.current, {
-  //     strings: ["Handy", "Mandy", "Candy", "More Strings"], // Strings to display
-  //     // Speed settings, try diffrent values untill you get good results
-  //     startDelay: 300,
-  //     typeSpeed: 100,
-  //     backSpeed: 100,
-  //     backDelay: 100
-  //   });
-
-  //   // Destropying
-  //   return () => {
-  //     typed.destroy();
-  //   };
-  // }, []);
-
   return (
-    <section class="greetings" id="greetings">
+    <section class="greetings app__margins" id="greetings">
       <article class="greetings__info">
         <h1 class="greetings__title">Помочь войти в IT и</h1>
         <div class="subtitle__container">

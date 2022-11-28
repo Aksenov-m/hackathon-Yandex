@@ -21,10 +21,13 @@ body {
   height: 100%;
   min-height: 100vh;
   min-width: 380px;
-  max-width: 1440px;
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+
+.app__margins {
   margin: 0 auto;
-  /* margin-left: 165px;
-  margin-right: 165px; */
+  padding-left: 165px;
+  padding-right: 165px;
 }
