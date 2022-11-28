@@ -1,0 +1,15 @@
+.link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #ffffff;
+  margin: 0;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.3s linear 0.2s;
+}
+
+.link:hover {
+  opacity: 0.6;
+}

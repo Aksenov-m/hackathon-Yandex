@@ -1,0 +1,28 @@
+.vacancy__navbar{
+  max-width: 740px;
+  margin-top: 55px;
+  margin-bottom: 47px;
+}
+
+.vacancy__navbar-list{
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  gap: 30px;
+  flex-direction: row;
+  padding: 0;
+  align-items: center;
+}
+
+.vacancy__navbar-item{
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #969696;
+}
+
+.vacancy__navbar-item_active{
+  color: #181818;
+}
