@@ -1,11 +1,13 @@
 .skills {
   width: 100%;
+  background: #F5F5F5;
+  color: #181818;
 }
 
 .skills__main {
   max-width: 1110px;
   margin: 0 auto;
-  padding: 50px 0 100px 0;
+  padding: 70px 0 50px 0;
   display: flex;
   flex-direction: column;
 }
@@ -15,15 +17,38 @@
   font-weight: 500;
   font-size: 48px;
   line-height: 56px;
-  margin: 0 0 26px;
+  margin: 0 0 60px;
+}
+
+.skills__paragraph {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 123%;
+  max-width: 733px;
+  margin: 0;
+}
+
+.skills__container-tab {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 40px 0 45px;
+}
+
+.skills__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .skills__link {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 23px;
-  margin: 0;
+  line-height: 25px;
+  margin: 15px 0 0;
+  max-width: 451px;
 }
 
 .skills__interview {
@@ -31,21 +56,13 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
-  text-decoration-line: underline;
-  color: #181818;
+  color: #ED6F5D;
+  cursor: pointer;
+  opacity: 1;
 }
 
-.skills__container-tab {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 60px 0 60px;
-}
-
-.skills__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.skills__interview:hover {
+  opacity: .7;
 }
 
 .skills__section-description {
@@ -84,6 +101,9 @@
 
 .skills__container-btn {
   margin: 0 auto;
+  height: 54px;
+  display: flex;
+  align-items: center;
 }
 
 .skills__btn-look {
@@ -107,11 +127,38 @@
 }
 
 .skills__container-work {
-  margin: 90px 0;
+  margin: 45px 0 0;
 }
 
 .skills__section-row {
   display: flex;
   flex-direction: row;
   margin-top: 45px;
+  justify-content: space-between;
+}
+
+.skills__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 94px;
+  max-width: 334px;
+}
+
+.skills__item:last-of-type {
+  margin-right: 0;
+}
+
+.skills__text {
+  margin: 0 0 0 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 123%;
+}
+
+.skills__img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
 }

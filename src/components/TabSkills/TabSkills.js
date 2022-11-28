@@ -1,4 +1,4 @@
-import { h } from 'preact';
+import {  } from 'preact/';
 
 const TabSkills = ({prof, onClick, isActive}) => {
 

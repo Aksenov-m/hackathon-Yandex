@@ -1,6 +1,8 @@
 .blockDescription {
   padding: 20px;
   box-sizing: border-box;
-  background: #969696;
+  background: #ffffff;
   border-radius: 25px;
+  box-shadow: 0 4px 4px rgba(150, 150, 150, 0.25);
+
 }
