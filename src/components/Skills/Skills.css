@@ -183,7 +183,7 @@
   border-radius: 50%;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1279px) {
   .skills__main {
     max-width: 920px;
   }

@@ -48,11 +48,11 @@ const Skills = () => {
         <div className='skills__container-tab'>
           <div className='skills__section-tabBtn'>
             <ul className='skills__list skills__list_style_none'>
-              <TabSkills title={'Программирование'} class={'tabSkills__text_size_fix'}/>
-              <TabSkills title={'Дизайн'} class={'active tabSkills__text_size_fix'}/>
-              <TabSkills title={'Анализ данных'} class={'tabSkills__text_size_fix'}/>
-              <TabSkills title={'Маркетинг'} class={'tabSkills__text_size_fix'}/>
-              <TabSkills title={'Менеджмент'} class={'tabSkills__text_size_fix'}/>
+              <TabSkills title={'Программирование'} class={'tabSkills__text_size_fix'} />
+              <TabSkills title={'Дизайн'} class={'active tabSkills__text_size_fix'} />
+              <TabSkills title={'Анализ данных'} class={'tabSkills__text_size_fix'} />
+              <TabSkills title={'Маркетинг'} class={'tabSkills__text_size_fix'} />
+              <TabSkills title={'Менеджмент'} class={'tabSkills__text_size_fix'} />
 
             </ul>
             <div className='skills__container-btn'>
@@ -125,15 +125,15 @@ const Skills = () => {
           <h3 className='skills__subtitle'>Условия работы</h3>
           <div className='skills__section-row'>
             <div className='skills__item'>
-              <img src="../../images-gutkati/smile.svg" alt="" className='skills__img'/>
+              <img src="../../images-gutkati/smile.svg" alt="" className='skills__img' />
               <p className='skills__text'>В группе около 50 человек</p>
             </div>
             <div className='skills__item'>
-              <img src="../../images-gutkati/yes.svg" alt="" className='skills__img'/>
+              <img src="../../images-gutkati/yes.svg" alt="" className='skills__img' />
               <p className='skills__text'>2-3 часа в день</p>
             </div>
             <div className='skills__item'>
-              <img src="../../images-gutkati/plus.svg" alt="" className='skills__img'/>
+              <img src="../../images-gutkati/plus.svg" alt="" className='skills__img' />
               <p className='skills__text'>доход от 35 до 55 тысяч рублей в месяц </p>
             </div>
           </div>
