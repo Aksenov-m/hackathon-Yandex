@@ -5,7 +5,7 @@ import BlockDescription from "../blockDescription/BlockDescription";
 const Questions = () => {
 
   return (
-    <section className='questions'>
+    <section className='questions' id='questions'>
 		<div className='questions__main'>
       <h2 className='skills__title'>Остались вопросы?</h2>
       <div className='questions__container-tab'>
@@ -14,6 +14,14 @@ const Questions = () => {
               <TabSkills title={'Рассматриваете ли вы резюме граждан других стран?'} />
               <TabSkills title={'Как меня введут в работу?'}  />
               <TabSkills title={'Как проходят собеседования?'} class={'active'} />
+              <div className='questions__box questions__box_hidden'>
+              <BlockDescription>
+                <p className='questions__description'>Собеседование проходит в онлайн режиме, в удобное для вас время.
+                  Расскажете о своем опыте и желании преподавать. При успешном собеседовании
+                  подберете для себя график и пройдете бесплатное обучение.
+                </p>
+              </BlockDescription>
+            </div>
               <TabSkills title={'У меня совсем нет преподавательского опыта. Я могу вести у вас курсы?'} />
               <TabSkills title={'Я откликнулся на вакансию, но не получил обратной связи. С кем мне связаться?'} />
             </ul>

@@ -120,7 +120,6 @@ const Skills = () => {
           </div>
         </div>
 
-
         <div className='skills__container-work'>
           <h3 className='skills__subtitle'>Условия работы</h3>
           <div className='skills__section-row'>
@@ -137,7 +136,6 @@ const Skills = () => {
               <p className='skills__text'>доход от 35 до 55 тысяч рублей в месяц </p>
             </div>
           </div>
-
         </div>
 
       </div>

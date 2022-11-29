@@ -96,7 +96,7 @@
 }
 
 .skills__description-item {
-   margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .skills__description-item:last-of-type {
@@ -161,8 +161,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-right: 94px;
-  max-width: 334px;
+  margin-right: 54px;
+  max-width: 344px;
 }
 
 .skills__item:last-of-type {
@@ -170,7 +170,7 @@
 }
 
 .skills__text {
-  margin: 0 0 0 20px ;
+  margin: 0 0 0 20px;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -187,12 +187,75 @@
   .skills__main {
     max-width: 920px;
   }
+
+  .skills__section-tabBtn {
+    margin-right: 40px;
+  }
+
+  .skills__box-question {
+    max-width: 430px;
+    min-height: 80px;
+    margin: 0;
+  }
+
+  .skills__item {
+    margin-right: 20px;
+  }
+
+  .skills__text {
+    margin-bottom: 10px;
+  }
+
+  .skills__btn {
+    padding: 15px 130px;
+  }
+
+  .skills__img {
+    width: 70px;
+    height: 70px;
+  }
 }
 
 @media screen and (max-width: 1023px) {
   .skills__main {
     max-width: 720px;
   }
+
+  .skills__section-tabBtn {
+    margin-top: 70px;
+  }
+
+  .skills__container-btn {
+    margin-top: 112px;
+  }
+
+  .skills__box-question {
+    max-width: 430px;
+    min-height: 50px;
+    margin: 0;
+  }
+
+  .skills__btn {
+    padding: 13px 100px;
+  }
+
+  .skills__section-row {
+    flex-direction: column;
+  }
+
+  .skills__item {
+    margin-bottom: 20px;
+  }
+
+  .skills__item:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .skills__img {
+    width: 60px;
+    height: 60px;
+  }
+
 }
 
 @media screen and (max-width: 767px) {
