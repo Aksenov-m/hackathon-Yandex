@@ -1,21 +1,15 @@
 import {  } from 'preact/';
 
-const TabSkills = ({prof, onClick, isActive}) => {
+const TabSkills = (props) => {
 
-  // const [isActive, setIsActive] = useState(false)
-  //
-  // const activeBtn = () => {
-  //   setIsActive(true)
-  // }
-
-  const handleBtn = () => {
-    onClick()
+  const handleBtnSkills = () => {
+    return ('.tabSkills__text').click(() => ('.tabSkills__text').remove('active')).add(`active`);
   }
 
   return (
     <div className = 'tabSkills' >
-      <button className = {`tabSkills__text ${isActive ? 'tabSkills__text-active' : ''}`} onClick={handleBtn}>
-        {prof}
+      <button className = {`tabSkills__text ${props.class}`} onClick={handleBtnSkills}>
+        {props.title}
       </button>
     </div>
   );

@@ -7,9 +7,23 @@
   margin-bottom: 35px;
   cursor: pointer;
   text-align: left;
+  outline: none;
+  transition: linear 0.2s;
 }
 
-.tabSkills__text-active {
+.active, .tabSkills__text:hover {
   background: #969696;
   color: #FFFFFF;
+}
+
+.tabSkills__text_size_fix {
+  width: 357px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 860px) {
+  .tabSkills__text {
+
+  }
 }
