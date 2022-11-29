@@ -8,6 +8,7 @@
   text-decoration: none;
   cursor: pointer;
   transition: opacity 0.3s linear 0.2s;
+  background-color: #000000;
 }
 
 .link:hover {

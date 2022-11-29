@@ -19,7 +19,7 @@ const VacancyNavbar = ({handlefilterVacancy}) => {
         Дизайн
         </li>
         <li class='vacancy__navbar-item' onclick={() => filterVacancy('Анализ данных')}>
-        Анализ{'\u00A0'}данных
+        Анализ данных
         </li>
         <li class='vacancy__navbar-item' onclick={() => filterVacancy('Маркетинг')}>
         Маркетинг

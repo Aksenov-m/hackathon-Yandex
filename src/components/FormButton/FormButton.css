@@ -1,0 +1,11 @@
+.not-found__button{
+  width: 357px;
+  height: 50px;
+  border: 2px solid #474747;
+  border-radius: 50px;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #181818;
+}

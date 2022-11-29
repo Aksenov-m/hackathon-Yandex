@@ -1,0 +1,35 @@
+.stories-card{
+  padding: 30px 25px;
+  width: 377px;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.stories-card__picture{
+  border-radius: 139.5px;
+  height: 279px;
+  width: 100%;
+  max-width: 282px;
+}
+
+.stories-card__about{
+  margin: 20px 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.stories-card__text{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.stories-card__box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

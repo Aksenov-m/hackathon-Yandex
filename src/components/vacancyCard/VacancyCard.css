@@ -11,26 +11,26 @@
 
 .vacancy-card__title{
   font-weight: 500;
-  font-size: 25px;
-  line-height: 29px;
-  margin: 49px 0 27px;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 20px 0 29px;
   color: #181818;
-  max-width: 317px;
+  max-width: 237px;
 }
 
 .vacancy-card__amount{
   font-weight: 400;
-  font-size: 15px;
-  line-height: 18px;
+  font-size: 20px;
+  line-height: 24px;
   color: #969696;
   margin: 0;
 }
 
 .vacancy-card__button{
-  font-weight: 400;
+  font-weight: 500;
+  color: #000000;
   font-size: 20px;
   line-height: 23px;
-  text-decoration: underline;
   border: none;
   background-color: #FFFFFF;
   margin: 0;
@@ -38,7 +38,7 @@
 }
 
 .vacancy-card__box{
-  margin: 35px 0 41px;
+  margin: 35px 0 21px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,7 +56,7 @@
 
 .vacancy-card__views::after {
   width: 18px;
-  height: 12px;
+  height: 13px;
   background-image: url(../../images/viewsVector.svg);
   content: "";
   background-repeat: no-repeat;
@@ -69,7 +69,7 @@
 }
 
 .vacancy-card__share{
-  background-image: url(../../images/shareVector.svg);
+  background-image: url(../../images/shareicon2.svg);
   position: absolute;
   background-repeat: no-repeat;
   background-size: contain;

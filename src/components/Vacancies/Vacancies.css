@@ -1,6 +1,6 @@
 .vacancies {
   padding-top: 50px;
-  padding-bottom: 111px;
+  padding-bottom: 100px;
   width: 100%;
   /*max-width: 1111px*/
   background-color: #F5F5F5;
@@ -12,7 +12,7 @@
 }
 
 .vacancies__title{
-  margin: 0 0 50px 0;
+  margin: 0 0 60px 0;
   font-weight: 500;
   font-size: 48px;
   line-height: 56px;
@@ -75,5 +75,5 @@
   border: none;
   background-color: transparent;
   text-align: center;
-  margin: 19px auto 0;
+  margin: 18px auto 0;
 }
