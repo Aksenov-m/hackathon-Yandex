@@ -10,16 +10,19 @@ const Vacancies = () => {
   const [notFound, setNotFound] = useState(false);
   const [mentor, setmentor] = useState(true);
   const [rewiew, setrewiew] = useState(false);
+  const [morebutton, setMorebutton] = useState(true)
 
 
     function vacancyMasterFilter(argument){
       const NEW_VACANCY_CARDS_MASTER = [...VACANCY_CARDS_MASTER].filter(item => item.status === argument);
       //const NEW_VACANCY_CARDS__REWIEWER = [...VACANCY_CARDS_REWIEWER].filter(item => item.status === argument);
-      setFilteredMaster(NEW_VACANCY_CARDS_MASTER);
       //setFilteredRewier(NEW_VACANCY_CARDS__REWIEWER)
-      setNotFound(false);
-      if(NEW_VACANCY_CARDS_MASTER.length === 0){
+      setMorebutton(false);
+      setFilteredMaster(NEW_VACANCY_CARDS_MASTER);
+      if(filteredMaster.length === 0){
         setNotFound(true);
+      } else{
+        setNotFound(false);
       }
     }
 
@@ -28,16 +31,19 @@ const Vacancies = () => {
       const NEW_VACANCY_CARDS__REWIEWER = [...VACANCY_CARDS_REWIEWER].filter(item => item.status === argument);
       //setFilteredMaster(NEW_VACANCY_CARDS_MASTER);
       setFilteredRewier(NEW_VACANCY_CARDS__REWIEWER)
-      setNotFound(false);
-      if(NEW_VACANCY_CARDS__REWIEWER === 0){
+      setMorebutton(false)
+      if(filteredRewier.length === 0){
         setNotFound(true);
+      } else {
+        setNotFound(false);
       }
     }
 
 
   function vacancyMentorFilter(){
     if (!mentor) {
-      setmentor(true)
+      setmentor(true);
+      setrewiew(false);
     } else {
     setmentor(false)
     }
@@ -46,6 +52,7 @@ const Vacancies = () => {
   function vacancyRewiewFilter2(){
     if (!rewiew) {
       setrewiew(true)
+      setmentor(false)
     } else {
     setrewiew(false)
     }
@@ -55,13 +62,13 @@ const Vacancies = () => {
 
   <section class ="vacancies app__margins" id="vacancies">
     <div class='vacancies__box'>
-      <h1 class='vacancies__title'>Вакансии</h1>
+      <h1 class='vacancies__title'>Роли в нашей команде</h1>
       <div class='vacancies__button-box'>
         <button class='vacancies__button vacancies__button_master' onClick={vacancyMentorFilter}>Для наставников</button>
 
         {mentor && <VacancyNavbar handlefilterVacancy = {vacancyMasterFilter} />}
 
-        {notFound ?
+        {mentor && notFound ?
 
         <div>
           <p>Ничего не найдено</p>
@@ -73,7 +80,7 @@ const Vacancies = () => {
         <div class="vacancies__card-list">
           {mentor && filteredMaster.map(card => (<VacancyCard key={card.id} text={card.text} />))}
         </div>
-        {mentor && <button class='vacancies__more'>Ещё вакансии</button>}
+        {mentor && morebutton && <button class='vacancies__more'>Ещё вакансии</button>}
         </>
         }
 
@@ -81,7 +88,7 @@ const Vacancies = () => {
 
         {rewiew && <VacancyNavbar handlefilterVacancy = {vacancyRewiewFilter} />}
 
-        {notFound ?
+        {rewiew && notFound ?
 
         <div>
           <p>Ничего не найдено</p>
@@ -89,13 +96,13 @@ const Vacancies = () => {
 
         :
 
-       <>
+        <>
        <div class="vacancies__card-list">
          {rewiew && filteredRewier.map(card => (<VacancyCard key={card.id} text={card.text} />))}
        </div>
-       {rewiew &&<button class='vacancies__more'>Ещё вакансии</button>}
-       </>
-       }
+       {rewiew && morebutton && <button class='vacancies__more'>Ещё вакансии</button>}
+      </>
+      }
 
        </div>
        </div>

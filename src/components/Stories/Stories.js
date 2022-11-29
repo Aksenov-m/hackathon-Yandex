@@ -1,5 +1,5 @@
 import { h } from 'preact';
-import Swiper from '../Swiper/Swiper';
+import SwiperStories from '../Swiper/SwiperStories';
 
 const Stories = () => (
 	<article class ="stories">
@@ -7,7 +7,7 @@ const Stories = () => (
       <h2 class="stories__title">Истории наших специалистов</h2>
       <p class="stories__about">Яндекс Практикум - это сообщество людей, увлеченных общим делом. Наши эксперты делятся своим опытом и рассказывают свои истории.</p>
       {/*<Swiper />*/}
-      <Swiper />
+      <SwiperStories />
     </div>
 	</article>
 );
