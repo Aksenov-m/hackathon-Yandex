@@ -5,7 +5,7 @@ import Header from "../header/Header";
 import Main from "../main/Main";
 
 const App = () => (
-  <div id="app">
+  <div class='app'>
     <div className='app__root'>
       <Header />
       <Main />

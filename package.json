@@ -35,6 +35,7 @@
     "preact": "^10.3.2",
     "preact-render-to-string": "^5.1.4",
     "preact-router": "^3.2.1",
+    "swiper": "^8.4.5",
     "typed.js": "^2.0.12"
   },
   "jest": {

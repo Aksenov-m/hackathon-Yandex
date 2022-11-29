@@ -1,11 +1,14 @@
 .not-found {
   width: 100%;
   background-color: #F5F5F5;
+  padding-bottom: 73px;
 }
 
 .not-found__box{
   max-width: 1110px;
   margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .not-found__title{
@@ -13,39 +16,25 @@
   font-size: 48px;
   line-height: 56px;
   color: #181818;
-  margin: 58px 0 26px 0;
+  margin: 0 0 26px 0
 }
 
 .not-found__about{
   font-weight: 400;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 24px;
   color: #181818;
-  margin: 0 0 111px 0;
+  margin: 0 0 97px 0;
   max-width: 520px;
 }
 
 .not-found__picture{
-  width: 542px;
-  height: 340px;
-  background-color: white;
-  margin: 47px 0 13px 0;
+  max-width: 401px;
+  width: 100%;
+  height: 302px;
+  background-image: url(../../images/notfoundpic.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 20px 0 0 70px;
 }
 
-.not-found__box{
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.not-found__button{
-  width: 357px;
-  height: 50px;
-  border: 2px solid #474747;
-  border-radius: 50px;
-  background-color: transparent;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 23px;
-  color: #181818;
-}

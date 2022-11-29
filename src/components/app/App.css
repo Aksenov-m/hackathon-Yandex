@@ -5,12 +5,11 @@ body {
   padding: 0;
   margin: 0;
   background: #fafafa;
-  font-family: 'YsText-Regular', 'Helvetica Neue', arial, sans-serif;
-  font-weight: 400;
-  color: #444;
+  font-family: 'YsDisplay', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
+  --swiper-theme-color: black;
 }
 
 * {

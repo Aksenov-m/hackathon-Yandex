@@ -1,0 +1,120 @@
+.how-become{
+  padding-top: 27px;
+  padding-bottom: 100px;
+  width: 100%;
+  background-color:  #FFFFFF;
+}
+
+.how-become__box{
+  max-width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.how-become__picture{
+  display: block;
+  width: 542px;
+  height: 340px;
+  margin: 0 0 6px 0;
+  background-image: url(../../images/tobeexpert.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.how-become__list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  gap: 20px;
+}
+
+.how-become__item-picture{
+  width: 46px;
+  height: 46px;
+  background-image: url(../../images/listicon1.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 22px;
+}
+
+.how-become__item-picture_icon-two{
+  background-image: url(../../images/listicon2.svg);
+}
+
+.how-become__item-picture_icon-three{
+  background-image: url(../../images/listicon3.svg);
+}
+
+.how-become__item-text{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.how-become__title{
+  margin: 50px 0 45px 0;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.how-become__item{
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 1023px) {
+  .how-become__picture{
+    height: auto;
+    margin: 50px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .how-become{
+    padding: 50px 16px 70px;
+    width: 100%;
+    background-color:  #F5F5F5;;
+  }
+
+  .how-become__box{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .how-become__title{
+    margin: 0 0 30px 0;
+  }
+  .how-become__item-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .how-become__picture{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .how-become__title{
+    margin-top: 0;
+  }
+  .how-become__picture{
+    width: 50vw;
+    height: auto;
+  }
+  .how-become__box{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    align-items: stretch;
+    flex-wrap: nowrap;
+  }
+}
