@@ -1,6 +1,6 @@
 .stories-card{
   padding: 30px 25px;
-  width: 377px;
+  max-width: 377px;
   background-color: #FFFFFF;
   box-sizing: border-box;
   border-radius: 10px;
@@ -8,9 +8,10 @@
 
 .stories-card__picture{
   border-radius: 139.5px;
-  height: 279px;
+  max-height: 279px;
   width: 100%;
   max-width: 282px;
+  object-fit: contain;
 }
 
 .stories-card__about{
@@ -32,4 +33,34 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media screen and (max-width: 1279px) {}
+
+@media screen and (max-width: 1023px) {
+}
+
+@media screen and (max-width: 767px) {
+  .stories-card{
+    padding: 20px 21px 20px;
+    max-width: 308px;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+  .stories-card__picture{
+    border-radius: 139.5px;
+    height: 195px;
+    width: 100%;
+    max-width: 197px;
+  }
+  .stories-card__about{
+    font-size: 14px;
+    line-height: 16px;
+    margin: 10px 0;
+  }
+  .stories-card__text{
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
