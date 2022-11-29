@@ -6,6 +6,7 @@ const Stories = () => (
     <div class="stories__box">
       <h2 class="stories__title">Истории наших специалистов</h2>
       <p class="stories__about">Яндекс Практикум - это сообщество людей, увлеченных общим делом. Наши эксперты делятся своим опытом и рассказывают свои истории.</p>
+      {/*<Swiper />*/}
       <Swiper />
     </div>
 	</article>
