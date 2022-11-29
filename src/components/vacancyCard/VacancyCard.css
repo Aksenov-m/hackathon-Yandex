@@ -7,6 +7,7 @@
   opacity: 0;
   animation: ani 0.5s forwards;
   position: relative;
+  flex-grow: 1;
 }
 
 .vacancy-card__title{
@@ -94,11 +95,19 @@
 @media screen and (max-width: 1023px) {
 }
 
+@media screen and (max-width: 1073px) {
+  .vacancy-card {
+    /*flex-shrink: 3;
+    flex-grow: 0;*/
+  }
+}
+
 @media screen and (max-width: 767px) {
   .vacancy-card {
     width:  345px;
     height: 189px;
     padding: 0 25px;
+    flex-shrink: 0;
   }
   .vacancy-card__title{
     font-size: 18px;

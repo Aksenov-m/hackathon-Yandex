@@ -65,8 +65,8 @@
 
 @media screen and (max-width: 1073px) {
   .benefits__item{
-    flex-shrink: 3;
-    flex-grow: 0;
+    /*flex-shrink: 3;
+    flex-grow: 0;*/
     width: 260px;
     padding: 21px 35px 33px 31px;
   }
