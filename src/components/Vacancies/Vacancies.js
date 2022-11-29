@@ -49,7 +49,7 @@ const Vacancies = () => {
     }
   }
 
-  function vacancyRewiewFilter2(){
+  function vacancyRewiewerFilter(){
     if (!rewiew) {
       setrewiew(true)
       setmentor(false)
@@ -60,11 +60,11 @@ const Vacancies = () => {
 
   return (
 
-  <section class ="vacancies app__margins" id="vacancies">
+  <section class ="vacancies" id="vacancies">
     <div class='vacancies__box'>
       <h1 class='vacancies__title'>Роли в нашей команде</h1>
       <div class='vacancies__button-box'>
-        <button class='vacancies__button vacancies__button_master' onClick={vacancyMentorFilter}>Для наставников</button>
+        <button class={`${mentor ? 'vacancies__button vacancies__button_active' : 'vacancies__button vacancies__button_master vacancies__button_inactive'}`} onClick={vacancyMentorFilter}>Для наставников</button>
 
         {mentor && <VacancyNavbar handlefilterVacancy = {vacancyMasterFilter} />}
 
@@ -85,7 +85,7 @@ const Vacancies = () => {
         </>
         }
 
-        <button class='vacancies__button vacancies__button_rewiew' onClick={vacancyRewiewFilter2}>Для ревьюеров</button>
+        <button class={`vacancies__button_rewiew ${rewiew ? 'vacancies__button vacancies__button_active' : 'vacancies__button vacancies__button_inactive'}`} onClick={vacancyRewiewerFilter}>Для ревьюеров</button>
 
         {rewiew && <VacancyNavbar handlefilterVacancy = {vacancyRewiewFilter} />}
 
