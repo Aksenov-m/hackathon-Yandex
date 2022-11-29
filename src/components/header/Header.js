@@ -7,7 +7,8 @@ function Header (props) {
 
   return (
 	<header class='header' id="header">
-		<a class='header__link' href="https://practicum.yandex.ru/" target='_blank' rel="noreferrer">
+    <div class="header__section">
+		<a class="header__link" href="https://practicum.yandex.ru/" target="_blank" rel="noreferrer">
     <Logo Class="header__logo" />
     </a>
     <Navigation {...props} />
@@ -15,6 +16,7 @@ function Header (props) {
 			<a activeClassName='active' href="#footer">Footer</a>
 			<a activeClassName='active' href="#main">Main</a>
 		</nav> */}
+    </div>
 	</header>
   );
 }

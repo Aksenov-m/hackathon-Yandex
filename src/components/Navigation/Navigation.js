@@ -1,4 +1,5 @@
 import { h } from "preact";
+import ButtonLink from "../buttonLink/buttonLink";
 
 const Navigation = (props) => {
   return (
@@ -20,17 +21,6 @@ const Navigation = (props) => {
           </a>
         </li>
         <li className="navigation__list">
-          <a
-            class="navigation__link"
-            activeClassName="active"
-            href="https://practicum.yandex.ru/promo/hr_landing_1#marketing"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Вакансии
-          </a>
-        </li>
-        <li className="navigation__list">
           <a class="navigation__link" activeClassName="active" href="#">
             Преимущества
           </a>
@@ -48,6 +38,14 @@ const Navigation = (props) => {
           >
             Вопросы
           </a>
+        </li>
+        <li className="navigation__list">
+        <ButtonLink
+          href="https://practicum.yandex.ru/promo/hr_landing_1"
+          Class="link_red"
+          text="Откликнуться"
+          target="_blank"
+        />
         </li>
       </ul>
     </nav>

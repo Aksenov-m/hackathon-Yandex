@@ -1,9 +1,13 @@
 import { h } from "preact";
+import ButtonLink from "../buttonLink/buttonLink";
 import Logo from "../Logo/Logo";
 
 function Footer() {
   return (
     <footer class="footer">
+      <ButtonLink href="#greetings" Class="footer__scroll-to-top"  >
+      <i class="scroll-to-top" />
+      </ButtonLink>
       <div class="footer__reference">
         <div class="footer__social">
           <Logo />
@@ -110,13 +114,11 @@ function Footer() {
         </nav>
       </div>
       <div class="footer__phone">
-            <a href="tel:8-800-700-93-29" class="footer__phone-link">
-              8-800-700-93-29
-            </a>
-            <p class="footer__phone-description">
-              Звонок по России бесплатный
-            </p>
-          </div>
+        <a href="tel:8-800-700-93-29" class="footer__phone-link">
+          8-800-700-93-29
+        </a>
+        <p class="footer__phone-description">Звонок по России бесплатный</p>
+      </div>
       <div class="footer__text">
         <span class="footer__copyright">
           &copy;2022 АНО ДПО «ШАД», ООО «Яндекс»

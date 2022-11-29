@@ -1,4 +1,5 @@
 .footer {
+  position: relative;
   max-width: 1110px;
   max-height: 100%;
   padding: 50px 0 100px 0;
@@ -187,4 +188,34 @@
 
 .footer__info-item:last-of-type {
   padding-bottom: 0;
+}
+
+.footer__scroll-to-top {
+  position: absolute;
+  top: 175px;
+  right: 24px;
+  background-color: transparent;
+}
+.link:hover {
+  opacity: 1;
+}
+
+.scroll-to-top:before {
+  content: '';
+  margin: 0;
+  background-size: 100%, contain;
+  background-color: transparent;
+  display: flex;
+  align-self: flex-start;
+  background-size: cover;
+  background-size: 50px 50px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+}
+
+.scroll-to-top:before {
+  background-image: url(../../imagesA/Page_up.svg);
 }

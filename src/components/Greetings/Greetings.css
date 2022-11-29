@@ -7,6 +7,7 @@
   background-color: rgba(121, 96, 96, 0.11);
   border-radius: 20px;
   margin: 0 auto;
+  margin-top: 95px;
   padding: 28px 35px 28px 50px;
 }
 
@@ -19,6 +20,12 @@
 .greetings__link {
   padding: 15px 35px;
   border-radius: 50px;
+}
+
+.link_red {
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: #ed6f5d;
 }
 
 .greetings__info {
