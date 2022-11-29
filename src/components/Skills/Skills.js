@@ -1,25 +1,13 @@
-import { useState } from 'preact/hooks';
+import {useState} from 'preact/hooks';
 import TabSkills from "../TabSkills/TabSkills";
 import BlockDescription from "../blockDescription/BlockDescription";
 import PopupInterview from "../PopupInterview/PopupInterview";
+import ButtonLink from "../buttonLink/buttonLink";
 
 const Skills = () => {
 
   const [isOpenPopupInterview, setIsOpenPopupInterview] = useState(false)
   // eslint-disable-next-line no-unused-vars
-  const [isActive, setIsActive] = useState(false)
-  const profs = [
-    'Веб-разработка',
-    'Дизайн-интерфейсов',
-    'Аналитик данных',
-    'Менеджер проектов',
-    'Менеджер по интернет-маркетингу',
-    'Data scientist',
-    'Тестировщик',
-    'Менеджер проектов'
-  ]
-
-  //const [prof, setProf] = useState(1)
 
   const openPopup = () => {
     setIsOpenPopupInterview(true)
@@ -29,43 +17,67 @@ const Skills = () => {
     setIsOpenPopupInterview(false)
   }
 
-  const activeBtn = (prof) => {
-    if(profs.prof === prof) {
-      setIsActive(true)
-      //setProf(prof)
-    } else {
-      setIsActive(false)
-    }
+  // const activeBtn = (prof) => {
+  //   if(profs.prof === prof) {
+  //     setIsActive(true)
+  //     //setProf(prof)
+  //   } else {
+  //     setIsActive(false)
+  //   }
+  //
+  // }
 
-  }
+//   const handleBtnSkills = (btn) => {
+//     for (let i = 0; i < btn.length; i++) {
+//   btn[i].addEventListener("click", function() {
+//     const current = document.getElementsByClassName("active");
+//     current[0].className = current[0].className.replace(" active", "");
+//     this.className += " active";
+//   });
+// }
+//     return btn
+//   }
 
   return (
     <section className='skills'>
       <div className='skills__main'>
         <h2 className='skills__title'>Наставник или ревьюер?</h2>
-        <p className='skills__link'>Пройдите <a className='skills__interview' href="#" onClick={openPopup}>опрос</a>, если сложно решить</p>
+        <p className='skills__paragraph'>В Яндекс Практикуме есть наставники и ревьюеры,
+          которые выполняют разные задачи. Вы можете выбрать роль, которая вам по душе.</p>
 
         <div className='skills__container-tab'>
           <div className='skills__section-tabBtn'>
-            <ul className='skills__list'>
-                {profs.map(prof =>
-                  <TabSkills
-                    prof={prof}
-                    key={prof}
-                    //active={profs.prof === prof}
-                    isActive={isActive}
-                    onClick={activeBtn}
-                  />
+            <ul className='skills__list skills__list_style_none'>
+              <TabSkills title={'Программирование'} class={'tabSkills__text_size_fix'} />
+              <TabSkills title={'Дизайн'} class={'active tabSkills__text_size_fix'} />
+              <TabSkills title={'Анализ данных'} class={'tabSkills__text_size_fix'} />
+              <TabSkills title={'Маркетинг'} class={'tabSkills__text_size_fix'} />
+              <TabSkills title={'Менеджмент'} class={'tabSkills__text_size_fix'} />
 
-                )}
             </ul>
+            <div className='skills__container-btn'>
+              <BlockDescription>
+                <div className='skills__box-question'>
+                  <p className='skills__text'>Пройдете короткий тест, чтобы узнать,
+                    какая роль вам больше подходит</p>
+                  <ButtonLink
+                    Class="greetings__link skills__btn"
+                    text="Кто я?"
+                    onClick={openPopup}
+                  />
+                </div>
+
+              </BlockDescription>
+
+            </div>
+
           </div>
           <div className='skills__section-description'>
             <h3 className='skills__subtitle'>Наставник</h3>
 
             <div className='skills__box'>
               <BlockDescription>
-                <ul>
+                <ul className='skills__list'>
                   <li className='skills__description-item'>
                     Помогать студентам ставить цели, рефлексировать
                     и делать выводы
@@ -88,7 +100,7 @@ const Skills = () => {
 
             <div className='skills__box'>
               <BlockDescription>
-                <ul>
+                <ul className='skills__list'>
                   <li className='skills__description-item'>
                     Проверять макеты студентов
                   </li>
@@ -107,47 +119,26 @@ const Skills = () => {
 
           </div>
         </div>
-        <div className='skills__container-btn'>
-          <button className='skills__btn-look'>Посмотреть вакансии</button>
-        </div>
 
 
         <div className='skills__container-work'>
           <h3 className='skills__subtitle'>Условия работы</h3>
           <div className='skills__section-row'>
             <div className='skills__item'>
-              <img src="#" alt="" />
+              <img src="../../images-gutkati/smile.svg" alt="" className='skills__img' />
               <p className='skills__text'>В группе около 50 человек</p>
             </div>
             <div className='skills__item'>
-              <img src="#" alt="" />
+              <img src="../../images-gutkati/yes.svg" alt="" className='skills__img' />
               <p className='skills__text'>2-3 часа в день</p>
             </div>
             <div className='skills__item'>
-              <img src="#" alt="" />
+              <img src="../../images-gutkati/plus.svg" alt="" className='skills__img' />
               <p className='skills__text'>доход от 35 до 55 тысяч рублей в месяц </p>
             </div>
           </div>
-        </div>
 
-        <div className='skills__container-expert'>
-          <h3 className='skills__subtitle'>Как стать экспертом?</h3>
-          <div className='skills__section-column'>
-            <div className='skills__item'>
-              <img src="#" alt="" />
-              <p className='skills__text'>Выберите роль и заполните заявку</p>
-            </div>
-            <div className='skills__item'>
-              <img src="#" alt="" />
-              <p className='skills__text'>Пройдите отбор и бесплатное обучение</p>
-            </div>
-            <div className='skills__item'>
-              <img src="#" alt="" />
-              <p className='skills__text'>Начните делиться знаниями со студентами Яндекс Практикума</p>
-            </div>
-          </div>
         </div>
-
 
       </div>
 
@@ -161,11 +152,14 @@ const Skills = () => {
 
 export default Skills;
 
-// <TabSkills title={'Веб-разработка'} />
-//               <TabSkills title={'Дизайн-интерфейсов'} />
-//               <TabSkills title={'Аналитик данных'} />
-//               <TabSkills title={'Менеджер проектов'} />
-//               <TabSkills title={'Менеджер по интернет-маркетингу'} />
-//               <TabSkills title={'Data scientist'} />
-//               <TabSkills title={'Тестировщик'} />
-//               <TabSkills title={'Менеджер проектов'} />
+
+// {profs.map(prof =>
+//     <TabSkills
+//       prof={prof}
+//       key={prof}
+//       //active={profs.prof === prof}
+//       isActive={isActive}
+//       onClick={activeBtn}
+//     />
+//
+//   )}
