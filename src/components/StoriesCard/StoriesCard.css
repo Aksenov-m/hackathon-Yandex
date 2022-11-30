@@ -6,11 +6,22 @@
   border-radius: 10px;
 }
 
-.stories-card__picture{
+/*.stories-card__picture{
   border-radius: 139.5px;
   max-height: 279px;
   width: 100%;
   max-width: 282px;
+  object-fit: contain;
+}*/
+
+.stories-card__picture{
+  background-image: url(../../images/expertpic.jpg);
+  border-radius: 139.5px;
+  height: 279px;
+  width: 100%;
+  max-width: 282px;
+  background-repeat: no-repeat;
+  background-size: contain;
   object-fit: contain;
 }
 

@@ -74,6 +74,8 @@
   flex-wrap: wrap;
   width: 100%;
   justify-content: flex-start;
+  /*display: grid;
+  grid-template-columns: repeat(auto-fill,357px);*/
 }
 
 .vacancies__more{
@@ -130,6 +132,7 @@
   }
   .vacancies__card-list{
     gap: 15px;
+    justify-content: center;
   }
   .vacancies__more{
     font-size: 16px;

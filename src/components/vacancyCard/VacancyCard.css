@@ -1,5 +1,6 @@
 .vacancy-card {
   width:  357px;
+  min-width: 357px;
   height: 251px;
   background-color: #FFFFFF;
   border-radius: 10px;
@@ -107,7 +108,7 @@
     width:  345px;
     height: 189px;
     padding: 0 25px;
-    flex-shrink: 0;
+    /*flex-shrink: 0;*/
   }
   .vacancy-card__title{
     font-size: 18px;

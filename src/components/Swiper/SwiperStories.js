@@ -32,25 +32,25 @@ export default () => {
         },
         1024: {
           slidesPerView: 2.3,
-          navigation: false,
+          //navigation: false,
           //spaceBetween: 10,
         },
         1100: {
           slidesPerView: 2.5,
           //slidesPerView: 2.2,
           //spaceBetween: 10,
-          navigation: false,
+          //navigation: false,
         },
         1200: {
           slidesPerView: 2.8,
           //slidesPerView: 2.2,
           //spaceBetween: 10,
-          navigation: false,
+          //navigation: false,
         },
         1390: {
           slidesPerView: 3.2,
           //spaceBetween: 10,
-          navigation: false,
+          //navigation: false,
         },
       }}
     >
