@@ -58,7 +58,7 @@ const Skills = () => {
             <div className='skills__container-btn skills__container-btn_hidden'>
               <BlockDescription>
                 <div className='skills__box-question'>
-                  <p className='skills__text'>Пройдете короткий тест, чтобы узнать,
+                  <p className='skills__text skills__text_margin_bottom'>Пройдете короткий тест, чтобы узнать,
                     какая роль вам больше подходит</p>
                   <ButtonLink
                     Class="greetings__link skills__btn"
@@ -130,18 +130,18 @@ const Skills = () => {
           <h3 className='skills__subtitle'>Условия работы</h3>
           <div className='skills__section-row'>
             <div className='skills__item'>
-              {/*<div className='skills__img'></div>*/}
-              <img src="../../images-gutkati/smile.svg" alt="" className='skills__img' />
+              <div className='skills__img'></div>
+              {/*<img src="../../images-gutkati/smile.svg" alt="" className='skills__img' />*/}
               <p className='skills__text'>В группе около 50 человек</p>
             </div>
             <div className='skills__item'>
-              {/*<div className='skills__img-yes'></div>*/}
-              <img src="../../images-gutkati/yes.svg" alt="" className='skills__img' />
+              <div className='skills__img-yes'></div>
+              {/*<img src="../../images-gutkati/yes.svg" alt="" className='skills__img' />*/}
               <p className='skills__text'>2-3 часа в день</p>
             </div>
             <div className='skills__item'>
-              {/*<div className='skills__img-plus'></div>*/}
-              <img src="../../images-gutkati/plus.svg" alt="" className='skills__img' />
+              <div className='skills__img-plus'></div>
+              {/*<img src="../../images-gutkati/plus.svg" alt="" className='skills__img' />*/}
               <p className='skills__text'>доход от 35 до 55 тысяч рублей в месяц </p>
             </div>
           </div>
