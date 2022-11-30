@@ -5,18 +5,18 @@ import Navigation from "../Navigation/Navigation";
 import Logo from "../Logo/Logo";
 
 function Header() {
-  let bodyElement = document.getElementsByTagName("body")[0];
+  //let bodyElement = document.getElementsByTagName("body")[0];
   // Стейт, отвечающий за бургер
   const [isBurgerOpen, setBurgerOpen] = useState(false);
 
   function handleBurgeClick() {
     setBurgerOpen(true);
-    bodyElement.classList.add("lock");
+    //bodyElement.classList.add("lock");
   }
 
   function closeBurger() {
     setBurgerOpen(false);
-    bodyElement.classList.remove("lock");
+    //bodyElement.classList.remove("lock");
   }
 
   useEffect(() => {
