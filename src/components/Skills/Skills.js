@@ -17,26 +17,9 @@ const Skills = () => {
     setIsOpenPopupInterview(false)
   }
 
-  // const activeBtn = (prof) => {
-  //   if(profs.prof === prof) {
-  //     setIsActive(true)
-  //     //setProf(prof)
-  //   } else {
-  //     setIsActive(false)
-  //   }
-  //
-  // }
-
-//   const handleBtnSkills = (btn) => {
-//     for (let i = 0; i < btn.length; i++) {
-//   btn[i].addEventListener("click", function() {
-//     const current = document.getElementsByClassName("active");
-//     current[0].className = current[0].className.replace(" active", "");
-//     this.className += " active";
-//   });
-// }
-//     return btn
-//   }
+  const stopPropagation = (e) => {
+    e.stopPropagation()
+  }
 
   return (
     <section className='skills'>
@@ -58,7 +41,7 @@ const Skills = () => {
             <div className='skills__container-btn skills__container-btn_hidden'>
               <BlockDescription>
                 <div className='skills__box-question'>
-                  <p className='skills__text skills__text_margin_bottom'>Пройдете короткий тест, чтобы узнать,
+                  <p className='skills__text-test'>Пройдете короткий тест, чтобы узнать,
                     какая роль вам больше подходит</p>
                   <ButtonLink
                     Class="greetings__link skills__btn"
@@ -121,27 +104,24 @@ const Skills = () => {
         </div>
 
         <ButtonLink
-                    Class="greetings__link skills__btn skills__btn-visible"
-                    text="Какая роль мне больше подойдет?"
-                    onClick={openPopup}
-                  />
+          Class="greetings__link skills__btn skills__btn-visible"
+          text="Какая роль мне больше подойдет?"
+          onClick={openPopup}
+        />
 
         <div className='skills__container-work'>
           <h3 className='skills__subtitle'>Условия работы</h3>
           <div className='skills__section-row'>
             <div className='skills__item'>
-              <div className='skills__img'></div>
-              {/*<img src="../../images-gutkati/smile.svg" alt="" className='skills__img' />*/}
+              <div className='skills__img-smile skills__img' />
               <p className='skills__text'>В группе около 50 человек</p>
             </div>
             <div className='skills__item'>
-              <div className='skills__img-yes'></div>
-              {/*<img src="../../images-gutkati/yes.svg" alt="" className='skills__img' />*/}
+              <div className='skills__img-yes skills__img' />
               <p className='skills__text'>2-3 часа в день</p>
             </div>
             <div className='skills__item'>
-              <div className='skills__img-plus'></div>
-              {/*<img src="../../images-gutkati/plus.svg" alt="" className='skills__img' />*/}
+              <div className='skills__img-plus skills__img' />
               <p className='skills__text'>доход от 35 до 55 тысяч рублей в месяц </p>
             </div>
           </div>
@@ -152,6 +132,7 @@ const Skills = () => {
       <PopupInterview
         isOpen={isOpenPopupInterview}
         onClose={closeAllPopup}
+        stopPropagation={stopPropagation}
       />
     </section>
   );
