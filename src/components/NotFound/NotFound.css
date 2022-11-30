@@ -2,9 +2,10 @@
   width: 100%;
   background-color: #FFFFFF;
   padding-bottom: 73px;
-  margin: 58px auto;
+  margin: 0 auto;
   padding-left: 165px;
   padding-right: 165px;
+  padding-top: 58px;
 }
 
 .not-found__box{

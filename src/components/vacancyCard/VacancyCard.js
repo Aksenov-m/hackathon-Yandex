@@ -1,7 +1,7 @@
 import { h } from 'preact';
 
-const VacancyCard = ({text,views,onclick,link}) => (
-	<article class = {`vacancy-card ${onclick ? 'vacancy-card_clicked' : ''}`}>
+const VacancyCard = ({text,views,newStyle,link}) => (
+	<article class = {`vacancy-card ${newStyle ? 'vacancy-card_clicked' : ''}`}>
     <a href='#' class='vacancy-card__share' />
       <h3 class='vacancy-card__title'>{text}</h3>
 		  <p class='vacancy-card__amount'>8-12 часов в неделю</p>

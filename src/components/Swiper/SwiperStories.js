@@ -46,7 +46,6 @@ export default () => {
           //navigation: false,
           centeredSlides: false,
           /*centeredSlidesBounds: true,*/
-          grabCursor: true,
         },
       }}
     >
