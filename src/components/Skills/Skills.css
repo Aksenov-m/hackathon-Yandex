@@ -173,7 +173,7 @@
 }
 
 .skills__text {
-  margin: 0;
+  margin: 0 0 0 20px;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
