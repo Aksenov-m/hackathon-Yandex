@@ -36,7 +36,7 @@ const Questions = () => {
               </BlockDescription>
             </div>
             <div className='questions__images' />
-            {/*<img src="../../images-gutkati/message.svg" alt="Сообщения" className='questions__images' />*/}
+
           </div>
         </div>
       </div>

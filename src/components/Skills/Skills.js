@@ -113,6 +113,7 @@ const Skills = () => {
           <h3 className='skills__subtitle'>Условия работы</h3>
           <div className='skills__section-row'>
             <div className='skills__item'>
+
               <div className='skills__img-smile skills__img' />
               <p className='skills__text'>В группе около 50 человек</p>
             </div>
@@ -122,6 +123,22 @@ const Skills = () => {
             </div>
             <div className='skills__item'>
               <div className='skills__img-plus skills__img' />
+
+              <div className='skills__img' />
+
+              <p className='skills__text'>В группе около 50 человек</p>
+            </div>
+            <div className='skills__item'>
+
+              <div className='skills__img-yes' />
+
+
+              <p className='skills__text'>2-3 часа в день</p>
+            </div>
+            <div className='skills__item'>
+
+              <div className='skills__img-plus' />
+
               <p className='skills__text'>доход от 35 до 55 тысяч рублей в месяц </p>
             </div>
           </div>

@@ -3,4 +3,19 @@
   max-height: 100%;
   overflow: hidden;
   background-color: transparent;
+  transition: opacity 0.3s linear 0.2s;
+}
+
+.logo:hover {
+  opacity: 0.6;
+}
+
+.logo__link {
+  z-index: 3;
+}
+
+@media screen and (max-width: 767px) {
+  .logo {
+    max-width: 191px;
+  }
 }
