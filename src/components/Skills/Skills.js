@@ -131,22 +131,22 @@ const Skills = () => {
           <div className='skills__section-row'>
             <div className='skills__item'>
 
-              <div className='skills__img'></div>
+              <div className='skills__img' />
 
               {/*<img src="../../images-gutkati/smile.svg" alt="" className='skills__img' />*/}
               <p className='skills__text'>В группе около 50 человек</p>
             </div>
             <div className='skills__item'>
 
-              <div className='skills__img-yes'></div>
+              <div className='skills__img-yes' />
 
-             
+
               {/*<img src="../../images-gutkati/yes.svg" alt="" className='skills__img' />*/}
               <p className='skills__text'>2-3 часа в день</p>
             </div>
             <div className='skills__item'>
 
-              <div className='skills__img-plus'></div>
+              <div className='skills__img-plus' />
 
               {/*<img src="../../images-gutkati/plus.svg" alt="" className='skills__img' />*/}
               <p className='skills__text'>доход от 35 до 55 тысяч рублей в месяц </p>
