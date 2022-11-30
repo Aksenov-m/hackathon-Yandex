@@ -118,3 +118,9 @@
     flex-wrap: nowrap;
   }
 }
+
+@media screen and (max-width: 1308px) {
+  .how-become__box{
+    margin-bottom: 50px;
+  }
+}

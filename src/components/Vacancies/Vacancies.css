@@ -3,7 +3,7 @@
   padding-bottom: 100px;
   width: 100%;
   /*max-width: 1111px*/
-  background-color: #F5F5F5;
+  background-color: #F8F8F8;;
   padding-left: 165px;
   padding-right: 165px;
 }
@@ -59,6 +59,10 @@
   right: -35px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.vacancies__not-found{
+  text-align: center;
 }
 
 .vacancies__button-box {

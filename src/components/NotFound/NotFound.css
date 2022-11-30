@@ -1,8 +1,8 @@
 .not-found {
   width: 100%;
-  background-color: #F5F5F5;
+  background-color: #FFFFFF;
   padding-bottom: 73px;
-  margin: 0 auto;
+  margin: 58px auto;
   padding-left: 165px;
   padding-right: 165px;
 }
@@ -65,6 +65,7 @@
 @media screen and (max-width: 767px) {
   .not-found {
     padding: 30px 15px 73px;
+    margin-top: 0;
   }
   .not-found__box{
     width: 100%;

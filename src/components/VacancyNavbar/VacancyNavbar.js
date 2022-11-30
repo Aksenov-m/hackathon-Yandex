@@ -12,6 +12,9 @@ const VacancyNavbar = ({handlefilterVacancy}) => {
   return(
 	<nav class='vacancy__navbar'>
       <ul class='vacancy__navbar-list'>
+      <li class='vacancy__navbar-item vacancy__navbar-item_active' onclick={() => filterVacancy('all')}>
+        Все предложения
+        </li>
         <li class='vacancy__navbar-item vacancy__navbar-item_active' onclick={() => filterVacancy('Программирование')}>
         Программирование
         </li>
