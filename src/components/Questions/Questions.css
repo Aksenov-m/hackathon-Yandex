@@ -27,7 +27,7 @@
 }
 
 .questions__box {
-    margin-bottom: 60px;
+    margin-bottom: 90px;
 }
 
 .questions__description {
@@ -38,18 +38,18 @@
 }
 
 
-.questions__images {
-  max-width: 263px;
-  max-height: 228px;
-}
-
 /*.questions__images {*/
 /*  max-width: 263px;*/
 /*  max-height: 228px;*/
-/*  background-image: url("../../images-gutkati/message.svg");*/
-/*  background-repeat: no-repeat;*/
-/*  background-position: center;*/
 /*}*/
+
+.questions__images {
+  width: 263px;
+  height: 228px;
+  background-image: url("../../images-gutkati/message.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 .questions__box-hidden {
   display: none;
