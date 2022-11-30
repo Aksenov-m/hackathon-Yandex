@@ -4,13 +4,13 @@ import Logo from "../Logo/Logo";
 
 function Footer() {
   return (
-    <footer class="footer">
-      <ButtonLink href="#greetings" Class="footer__scroll-to-top"  >
-      <i class="scroll-to-top" />
+    <footer class="footer" id="footer">
+      <ButtonLink href="#greetings" Class="footer__scroll-to-top">
+        <i class="scroll-to-top" />
       </ButtonLink>
       <div class="footer__reference">
         <div class="footer__social">
-          <Logo />
+          <Logo ClassReference="footer__ref" Class="footer__logo-ya" />
           <nav class="footer__links">
             <ul class="footer__list">
               <li class="footer__row">
@@ -24,27 +24,29 @@ function Footer() {
                   Журнал
                 </a>
               </li>
-              <li class="footer__row">
-                <a
-                  class="footer__link"
-                  href="https://vk.com/yandex.practicum"
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="Перейти в группу ВКонтакте"
-                >
-                  <i class="footer__logo vk" />
-                </a>
-              </li>
-              <li class="footer__row">
-                <a
-                  class="footer__link"
-                  href="#"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <i class="footer__logo telegram" />
-                </a>
-              </li>
+              <span class="footer__span">
+                <li class="footer__row">
+                  <a
+                    class="footer__link"
+                    href="https://vk.com/yandex.practicum"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Перейти в группу ВКонтакте"
+                  >
+                    <i class="footer__logo vk" />
+                  </a>
+                </li>
+                <li class="footer__row">
+                  <a
+                    class="footer__link"
+                    href="#"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i class="footer__logo telegram" />
+                  </a>
+                </li>
+              </span>
             </ul>
           </nav>
         </div>

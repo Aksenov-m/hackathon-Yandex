@@ -2,6 +2,9 @@
   width: 100%;
   background-color: #F5F5F5;
   padding-bottom: 73px;
+  margin: 0 auto;
+  padding-left: 165px;
+  padding-right: 165px;
 }
 
 .not-found__box{
@@ -9,6 +12,7 @@
   margin: 0 auto;
   display: flex;
   justify-content: flex-start;
+  position: relative;
 }
 
 .not-found__title{
@@ -38,3 +42,66 @@
   margin: 20px 0 0 70px;
 }
 
+.not-found__button{
+  position: absolute;
+  bottom: 20px;
+  width: 357px;
+  height: 50px;
+  border: 2px solid #474747;
+  border-radius: 50px;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #181818;
+}
+
+@media screen and (max-width: 1279px) {
+}
+
+@media screen and (max-width: 1023px) {
+}
+
+@media screen and (max-width: 767px) {
+  .not-found {
+    padding: 30px 15px 73px;
+  }
+  .not-found__box{
+    width: 100%;
+    flex-direction: column;
+  }
+  .not-found__title{
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 30px;
+  }
+  .not-found__about{
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 25px;
+  }
+  .not-found__button{
+    font-size: 16px;
+    line-height: 19px;
+    width: 344px;
+  }
+  .not-found__picture{
+    max-width: 266px;
+    height: 228px;
+    margin: 0 auto;
+  }
+  .not-found__button{
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 345px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .not-found__button{
+    width: 97%;
+  }
+}

@@ -22,12 +22,6 @@
   border-radius: 50px;
 }
 
-.link_red {
-  padding: 10px 20px;
-  border-radius: 50px;
-  background-color: #ed6f5d;
-}
-
 .greetings__info {
   display: flex;
   flex-direction: column;

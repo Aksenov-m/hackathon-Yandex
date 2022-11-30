@@ -7,7 +7,7 @@
 .skills__main {
   max-width: 1110px;
   margin: 0 auto;
-  padding: 70px 0 50px 0;
+  padding: 70px 0 0 0;
   display: flex;
   flex-direction: column;
 }
@@ -157,6 +157,7 @@
   flex-direction: row;
   margin-top: 45px;
   justify-content: space-between;
+  padding-bottom: 50px;
 }
 
 .skills__item {
@@ -164,6 +165,7 @@
   flex-direction: row;
   align-items: center;
   margin-right: 54px;
+  /*max-width: 344px;*/
 }
 
 .skills__item:last-of-type {
@@ -177,7 +179,9 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 123%;
+  max-width: 234px;
 }
+
 
 .skills__text_margin_bottom {
   margin: 0 0 20px 0;
@@ -210,6 +214,7 @@
   background-image: url("../../images-gutkati/plus.svg");
   background-repeat: no-repeat;
   background-position: center;
+
   width: 90px;
   height: 90px;
   border-radius: 50%;
@@ -380,6 +385,12 @@
   .skills__btn-visible {
     border: 1px solid #000;
   }
-
-
+  .skills__img-yes{
+    width: 60px;
+    height: 60px;
+  }
+  .skills__img-plus{
+    width: 60px;
+    height: 60px;
+  }
 }
