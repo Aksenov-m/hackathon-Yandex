@@ -70,6 +70,17 @@
   border-radius: 15px;
 }
 
+/*.vacancy-card__share{
+  background-image: url(../../images/shareicon2.svg);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  top: 20px;
+  right: 16px;
+}*/
+
 .vacancy-card__share{
   background-image: url(../../images/shareicon2.svg);
   position: absolute;

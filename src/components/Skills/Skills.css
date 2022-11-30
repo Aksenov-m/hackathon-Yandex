@@ -7,7 +7,7 @@
 .skills__main {
   max-width: 1110px;
   margin: 0 auto;
-  padding: 70px 0 50px 0;
+  padding: 70px 0 0 0;
   display: flex;
   flex-direction: column;
 }

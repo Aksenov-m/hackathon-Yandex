@@ -14,11 +14,12 @@ import { Navigation } from "swiper";
 // eslint-disable-next-line react/display-name
 export default () => {
   return (
+  <div class="slider__box">
     <Swiper
       // install Swiper modules
       navigation={true}
       modules={[Navigation]}
-      spaceBetween={20}
+      spaceBetween={35}
       slidesPerView={1}
       loop={true}
       breakpoints={{
@@ -27,33 +28,34 @@ export default () => {
           //spaceBetween: 10,
         },*/
         600: {
-          slidesPerView: 2.2,
+          slidesPerView: 2,
           //spaceBetween: 10,
         },
         1024: {
-          slidesPerView: 2.3,
+          slidesPerView: 2,
           //navigation: false,
-          //spaceBetween: 10,
+          spaceBetween: 35,
         },
         1100: {
-          slidesPerView: 2.5,
+          slidesPerView: 2,
           //slidesPerView: 2.2,
-          //spaceBetween: 10,
+          spaceBetween: 35,
           //navigation: false,
         },
         1200: {
-          slidesPerView: 2.8,
+          slidesPerView: 2,
           //slidesPerView: 2.2,
-          //spaceBetween: 10,
+          spaceBetween: 35,
           //navigation: false,
         },
         1390: {
-          slidesPerView: 3.2,
-          //spaceBetween: 10,
+          slidesPerView: 3,
+          spaceBetween: 35,
           //navigation: false,
         },
       }}
     >
+    <div class="slider_slide-box swiper-wrapper">
       <SwiperSlide>
         <StoriesCard />
       </SwiperSlide>
@@ -66,6 +68,8 @@ export default () => {
       <SwiperSlide>
         <StoriesCard />
       </SwiperSlide>
+    </div>
     </Swiper>
+  </div>
   );
 };

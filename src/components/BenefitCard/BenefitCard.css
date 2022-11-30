@@ -52,6 +52,7 @@
   margin: 20px 0 20px;
   color: #181818;
   max-width: 277px;
+  min-height: 58px;
 }
 
 .benefits__subtitle{

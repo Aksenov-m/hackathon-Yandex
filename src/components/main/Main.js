@@ -7,13 +7,14 @@ import Vacancies from '../Vacancies/Vacancies';
 import Questions from '../Questions/Questions';
 import Benefits from '../Benefits/Benefits';
 import NotFound from '../NotFound/NotFound';
-//import HowBeExpert from '../HowBeExpert/HowBeExpert';
-import Stories from '../Stories/Stories'
+import HowBeExpert from '../HowBeExpert/HowBeExpert';
+import Stories from '../Stories/Stories';
 
 const Main = () => (
   <>
 	{/*<Greetings />*/}
   <Skills />
+  <HowBeExpert />
   <Benefits />
   <Vacancies />
   <NotFound />
