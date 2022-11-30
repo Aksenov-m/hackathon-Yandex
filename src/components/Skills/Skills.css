@@ -157,6 +157,7 @@
   flex-direction: row;
   margin-top: 45px;
   justify-content: space-between;
+  padding-bottom: 50px;
 }
 
 .skills__item {

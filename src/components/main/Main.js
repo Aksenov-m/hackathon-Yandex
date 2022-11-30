@@ -1,25 +1,24 @@
 import { h } from 'preact';
 
-//import Greetings from '../Greetings/Greetings';
-//import Skills from '../Skills/Skills';
+import Greetings from '../Greetings/Greetings';
+import Skills from '../Skills/Skills';
 import Vacancies from '../Vacancies/Vacancies';
 //import Сomment from '../Сomment/Сomment';
-//import Questions from '../Questions/Questions';
+import Questions from '../Questions/Questions';
 import Benefits from '../Benefits/Benefits';
 import NotFound from '../NotFound/NotFound';
-import HowBeExpert from '../HowBeExpert/HowBeExpert';
+//import HowBeExpert from '../HowBeExpert/HowBeExpert';
 import Stories from '../Stories/Stories'
 
 const Main = () => (
   <>
-	{/*<Greetings />*/}
-  {/*<Skills />*/}
-  <Vacancies />
+	<Greetings />
+  <Skills />
   <Benefits />
+  <Vacancies />
   <NotFound />
   {/*<Сomment />*/}
-  {/*<Questions />*/}
-  <HowBeExpert />
+  <Questions />
   <Stories />
   </>
 );
