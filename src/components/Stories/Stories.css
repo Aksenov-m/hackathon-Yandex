@@ -2,6 +2,7 @@
   width: 100%;
   background-color:  #F8F8F8;
   padding-left: 165px;
+  padding-bottom: 113px;
 }
 
 .stories__box{
@@ -23,4 +24,31 @@
   line-height: 30px;
   margin: 0 0 44px 0;
   max-width: 733px;
+}
+
+@media screen and (max-width: 1279px) {}
+
+@media screen and (max-width: 1023px) {
+}
+
+@media screen and (max-width: 767px) {
+  .stories{
+    /*padding-left: 15px;*/
+    padding: 0 0 70px 0;
+    /*padding-right: 15px;*/
+  }
+  .stories__title{
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 32px;
+    line-height: 38px;
+    margin: 30px 0;
+  }
+  .stories__about{
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 0 0 30px 0;
+  }
 }

@@ -10,10 +10,39 @@
 }
 
 .benefits__icon{
-  background-color:#969696;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.benefits__icon_1{
+  background-image: url(../../images/iconbenefit1.svg);
+  width: 79.51px;
+  height: 60px;
+}
+.benefits__icon_2{
+  background-image: url(../../images/iconbenefit2.svg);
+  width: 54px;
+  height: 60px;
+}
+.benefits__icon_3{
+  background-image: url(../../images/iconbenefit3.svg);
+  width: 47.91px;
+  height: 60px;
+}
+.benefits__icon_4{
+  background-image: url(../../images/iconbenefit4.svg);
+  width: 99.09px;
+  height: 60px;
+}
+.benefits__icon_5{
+  background-image: url(../../images/iconbenefit5.svg);
+  width: 34.22px;
+  height: 60px;
+}
+.benefits__icon_6{
+  background-image: url(../../images/iconbenefit6.svg);
   width: 60px;
   height: 60px;
-  border-radius: 50%;
 }
 
 .benefits__headline{
@@ -36,8 +65,8 @@
 
 @media screen and (max-width: 1073px) {
   .benefits__item{
-    flex-shrink: 3;
-    flex-grow: 0;
+    /*flex-shrink: 3;
+    flex-grow: 0;*/
     width: 260px;
     padding: 21px 35px 33px 31px;
   }
