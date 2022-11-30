@@ -22,8 +22,21 @@
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 767px) {
-  .tabSkills__text {
+@media screen and (max-width: 1023px) {
+  .tabSkills__text_size_fix {
+    width: 250px;
+  }
+}
 
+@media screen and (max-width: 767px) {
+
+  .tabSkills__text {
+    padding: 8px 35px;
+  }
+
+  .tabSkills__text_size_fix {
+    width: 180px;
+    margin-right: 21px;
+    padding: 8px 5px;
   }
 }

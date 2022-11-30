@@ -1,7 +1,7 @@
 import { h } from 'preact';
 
-const FormButton = ({text}) => (
-	<button class='not-found__button'>{text}</button>
+const FormButton = ({style,text}) => (
+	<button class={`${style}`}>{text}</button>
 );
 
 export default FormButton;

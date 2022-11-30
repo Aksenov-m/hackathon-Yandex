@@ -1,6 +1,6 @@
 .vacancy__navbar{
   max-width: 740px;
-  margin-top: 55px;
+  margin-top: 35px;
   margin-bottom: 47px;
 }
 
@@ -25,4 +25,38 @@
 
 .vacancy__navbar-item_active{
   color: #181818;
+}
+
+@media screen and (max-width: 1100px) {
+  .vacancy__navbar-list{
+    gap: 18px;
+  }
+  .vacancy__navbar{
+    max-width: 640px;
+    flex-shrink: 2;
+  }
+}
+
+@media screen and (max-width: 1103px) {
+  .vacancy__navbar-item{
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+@media screen and (max-width: 894px) {
+  .vacancy__navbar-list{
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .vacancy__navbar{
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 30px;
+  }
+  .vacancy__navbar-list{
+    gap: 18px;
+  }
 }
