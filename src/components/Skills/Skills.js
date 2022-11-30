@@ -3,7 +3,6 @@ import TabSkills from "../TabSkills/TabSkills";
 import BlockDescription from "../blockDescription/BlockDescription";
 import PopupInterview from "../PopupInterview/PopupInterview";
 import ButtonLink from "../buttonLink/buttonLink";
-import HowBeExpert from '../HowBeExpert/HowBeExpert';
 
 const Skills = () => {
 
@@ -147,8 +146,6 @@ const Skills = () => {
             </div>
           </div>
         </div>
-
-        <HowBeExpert />
 
       </div>
 

@@ -1,3 +1,14 @@
+.slider__box{
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 0;
+}
+
+/*.swiper .slider_slide-box {
+  width: 100px
+}*/
+
 @media screen and (max-width: 600px) {
   .swiper-slide{
     display: flex;
@@ -11,7 +22,6 @@
   .swiper-button-prev::after {
     display: block;
     margin-right: 25px;
-    z-index: 99;
     /*background-image: url(../images/PreviousSlider.svg);*/
   }
   .swiper-button-next::after {
@@ -42,9 +52,20 @@
 
 @media screen and (min-width: 600px) {
   .swiper-button-prev::after {
-    display: none;
+    /*display: none;*/
+    display: block;
+    margin-right: 0px;
+    position: absolute;
   }
   .swiper-button-next::after {
-    display: none;
+    /*display: none;*/
+    display: block;
+    margin-left: 0px;
+    position: absolute;
   }
 }
+
+/*.swiper .swiper-wrapper, .swiper-container-rtl {
+  color:brown;
+  width: 50px;
+  }*/
