@@ -5,8 +5,8 @@ import { h } from "preact";
 function Button(props) {
 
   return (
-    <a class={`link ${props.Class}`} href={props.href} onClick={props.onClick}>
-      {props.text}
+    <a class={`link ${props.Class}`} href={props.href} onClick={props.onClick} target={props.target}>
+      {props.text} {props.children}
     </a>
   );
 }

@@ -1,31 +1,63 @@
-import { h } from 'preact';
+import { h } from "preact";
+import { useState, useEffect } from "preact/hooks";
 
 import Navigation from "../Navigation/Navigation";
 import Logo from "../Logo/Logo";
 
-function Header (props) {
+function Header() {
+  let bodyElement = document.getElementsByTagName("body")[0];
+  // Стейт, отвечающий за бургер
+  const [isBurgerOpen, setBurgerOpen] = useState(false);
+
+  function handleBurgeClick() {
+    setBurgerOpen(true);
+    bodyElement.classList.add("lock");
+  }
+
+  function closeBurger() {
+    setBurgerOpen(false);
+    bodyElement.classList.remove("lock");
+  }
+
+  useEffect(() => {
+    if (!isBurgerOpen) return;
+    function handleEscClose(evt) {
+      if (evt.key === "Escape") {
+        closeBurger();
+      }
+    }
+    document.addEventListener("keydown", handleEscClose);
+    return () => document.removeEventListener("keydown", handleEscClose);
+  }, [handleBurgeClick, closeBurger]);
+
+  useEffect(() => {
+    function handleClickClose(evt) {
+      if (evt.target.classList.contains("header__burger_active")) {
+        closeBurger();
+      }
+    }
+    document.addEventListener("click", handleClickClose);
+    return () => document.removeEventListener("click", handleClickClose);
+  }, [handleBurgeClick, closeBurger]);
 
   return (
-	<header class='header' id="header">
-    <div class="header__section">
-		<a class="header__link" href="https://practicum.yandex.ru/" target="_blank" rel="noreferrer">
-    <Logo Class="header__logo" />
-    </a>
-    <Navigation {...props} />
-		{/* <nav>
-			<a activeClassName='active' href="#footer">Footer</a>
-			<a activeClassName='active' href="#main">Main</a>
-		</nav> */}
-    </div>
-	</header>
+    <header class="header" id="header">
+      <div class="header__section">
+        <div class="header__body">
+          <Logo Class="header__logo" />
+          <div
+            class={`header__burger ${
+              isBurgerOpen ? "header__burger_active" : ""
+            }`}
+            onClick={handleBurgeClick}
+          >
+            <span onClick={handleBurgeClick} />
+          </div>
+          <Navigation burgerOpen={isBurgerOpen} closeBurger={closeBurger} />
+        </div>
+      </div>
+    </header>
   );
 }
 
 export default Header;
-
-
-
-
-    // <div className={`header__burger ${props.burgerOpen ? "header__burger_active" : ""}`} onClick={props.onBurger}>
-    // <span onClick={props.onBurger}></span>
-    // </div>
