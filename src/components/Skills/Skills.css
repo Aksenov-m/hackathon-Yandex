@@ -189,31 +189,31 @@
 
 
 .skills__img {
-background-image: url("../../images-gutkati/smile.svg");
- width: 90px;
-height: 90px;
-border-radius: 50%;
-background-repeat: no-repeat;
+  background-image: url("../../images-gutkati/smile.svg");
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
   background-size: contain;
 }
 
 .skills__img-yes {
-background-image: url("../../images-gutkati/yes.svg");
-width: 90px;
-height: 90px;
-border-radius: 50%;
-background-repeat: no-repeat;
+  background-image: url("../../images-gutkati/yes.svg");
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
   background-size: contain;
 }
 
 .skills__img-plus {
-background-image: url("../../images-gutkati/plus.svg");
- background-repeat: no-repeat;
- background-repeat: no-repeat;
+  background-image: url("../../images-gutkati/plus.svg");
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-size: contain;
- width: 90px;
- height: 90px;
- border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
 }
 
 .skills__btn-visible {
@@ -381,6 +381,12 @@ background-image: url("../../images-gutkati/plus.svg");
   .skills__btn-visible {
     border: 1px solid #000;
   }
-
-
+  .skills__img-yes{
+    width: 60px;
+    height: 60px;
+  }
+  .skills__img-plus{
+    width: 60px;
+    height: 60px;
+  }
 }

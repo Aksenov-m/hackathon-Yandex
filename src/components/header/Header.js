@@ -11,12 +11,12 @@ function Header() {
 
   function handleBurgeClick() {
     setBurgerOpen(true);
-    //bodyElement.classList.add("lock");
+    document.body.classList.add('lock');
   }
 
   function closeBurger() {
     setBurgerOpen(false);
-    //bodyElement.classList.remove("lock");
+    document.body.classList.remove("lock")
   }
 
   useEffect(() => {
