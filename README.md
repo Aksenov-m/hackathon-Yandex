@@ -17,11 +17,11 @@
 
 ### Технологический стек
 * :point_right: PREACT
-* :point_right: HTML
 * :point_right: CSS
 * :point_right: Flex верстка
 * :point_right: Grid верстка
 * :point_right: Файловая структура по БЭМ
+* :point_right: Yandex Forms
 * :point_right: Ключевые точки для media queries 1279px, 1023px, 767px
 
 ### Библиотеки которые использовались

@@ -72,10 +72,6 @@
   padding-right: 26px;
 }
 
-/* .footer__row:last-of-type {
-  padding-right: 0;
-} */
-
 .footer__logo:before {
   content: '';
   background-size: 100%, contain;
