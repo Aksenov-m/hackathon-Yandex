@@ -9,19 +9,46 @@ import Benefits from '../Benefits/Benefits';
 import NotFound from '../NotFound/NotFound';
 import HowBeExpert from '../HowBeExpert/HowBeExpert';
 import Stories from '../Stories/Stories';
+import {useState} from "preact/hooks";
 
-const Main = () => (
+const Main = () => {
+
+  const [isOpenPopupInterview, setIsOpenPopupInterview] = useState(false)
+  // eslint-disable-next-line no-unused-vars
+
+  const openPopup = () => {
+    setIsOpenPopupInterview(true)
+  }
+
+  const closeAllPopup = () => {
+    setIsOpenPopupInterview(false)
+  }
+
+  const stopPropagation = (e) => {
+    e.stopPropagation()
+  }
+
+  return (
+
   <>
 	{/*<Greetings />*/}
-  <Skills />
+  <Skills
+  isOpen={isOpenPopupInterview}
+  onClose={closeAllPopup}
+  stopPropagation={stopPropagation}
+  openPopup={openPopup}
+  />
   <HowBeExpert />
   <Benefits />
   <Vacancies />
-  <NotFound />
+  <NotFound isOpen={isOpenPopupInterview}
+  onClose={closeAllPopup}
+  stopPropagation={stopPropagation}
+  openPopup={openPopup} />
   {/*<Сomment />*/}
   <Questions />
   <Stories />
-  </>
-);
+  </>);
+}
 
 export default Main;

@@ -40,9 +40,10 @@
 }
 
 
-.swiper{
+
+/*.swiper{
   max-width: 1440px;
-}
+}*/
 
 .swiper-pagination-bullets {
   /*margin-bottom: -10px; работает*/
@@ -62,6 +63,9 @@
     margin-left: 0px;
     position: absolute;
     margin-top: 0
+  }
+  .swiper{
+    max-width: 1440px;
   }
 }
 
@@ -88,3 +92,8 @@
   }
 
 
+  @media screen and (max-width: 599px) {
+    .swiper{
+      max-width: 375px;
+    }
+  }

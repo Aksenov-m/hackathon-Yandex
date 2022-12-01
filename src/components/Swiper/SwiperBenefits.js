@@ -10,19 +10,19 @@ import { Swiper, SwiperSlide } from 'swiper/react/swiper-react.js';
 import 'swiper/swiper-bundle.min.css';
 import BenefitCard from '../BenefitCard/BenefitCard';
 
+// eslint-disable-next-line react/display-name
 export default () => {
   return (
-    <Swiper
+    <Swiper class="swiper-benefits"
       // install Swiper modules
       spaceBetween={10}
-      slidesPerView={1}
+      centeredSlides={true}
+      centerInsufficientSlides={true}
       loop={true}
       pagination={{
         clickable: true,
       }}
       modules={[Pagination]}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log('slide change')}
     >
         <SwiperSlide>
           <BenefitCard
@@ -62,8 +62,8 @@ export default () => {
         <SwiperSlide>
         <BenefitCard
         style={'benefits__icon_6'}
-        title={'Менять жизнь людей к лучшему'}
-        about={'вы сможете стать старшим наставником или сеньор-ревьювером'} />
+        title={'Расти внутри своей роли'}
+        about={'Вы сможете стать старшим наставником или сеньор-ревьюером'} />
         </SwiperSlide>
     </Swiper>
   );
