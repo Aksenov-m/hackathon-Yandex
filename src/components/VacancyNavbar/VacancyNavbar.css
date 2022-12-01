@@ -22,6 +22,12 @@
   line-height: 23px;
   color: #969696;
   cursor: pointer;
+  transition: color 0.3s ease-out;
+}
+
+.vacancy__navbar-item:hover{
+  color: #181818;
+  transition: color 0.3s ease-out;
 }
 
 .vacancy__navbar-item_active{
