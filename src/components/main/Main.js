@@ -1,6 +1,6 @@
-import { h } from 'preact';
+import {h} from 'preact';
 
-//import Greetings from '../Greetings/Greetings';
+import Greetings from '../Greetings/Greetings';
 import Skills from '../Skills/Skills';
 import Vacancies from '../Vacancies/Vacancies';
 //import Сomment from '../Сomment/Сomment';
@@ -31,7 +31,7 @@ const Main = () => {
   return (
 
   <>
-	{/*<Greetings />*/}
+	<Greetings />
   <Skills
   isOpen={isOpenPopupInterview}
   onClose={closeAllPopup}

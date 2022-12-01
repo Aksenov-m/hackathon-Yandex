@@ -5,7 +5,7 @@ import Logo from "../Logo/Logo";
 function Footer() {
   return (
     <footer class="footer" id="footer">
-      <ButtonLink href="#greetings" Class="footer__scroll-to-top">
+      <ButtonLink href="#app" Class="footer__scroll-to-top">
         <i class="scroll-to-top" />
       </ButtonLink>
       <div class="footer__reference">

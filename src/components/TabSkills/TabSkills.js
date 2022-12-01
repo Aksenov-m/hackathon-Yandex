@@ -1,14 +1,11 @@
-import {  } from 'preact/';
+import { h } from 'preact';
 
 const TabSkills = (props) => {
 
-  const handleBtnSkills = () => {
-    return ('.tabSkills__text').click(() => ('.tabSkills__text').remove('active')).add(`active`);
-  }
-
   return (
+
     <div className = 'tabSkills' >
-      <button className = {`tabSkills__text ${props.class}`} onClick={handleBtnSkills}>
+      <button className = {`tabSkills__text ${props.class}`}>
         {props.title}
       </button>
     </div>
@@ -16,3 +13,6 @@ const TabSkills = (props) => {
 };
 
 export default TabSkills;
+
+
+
