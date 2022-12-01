@@ -63,6 +63,11 @@
   white-space: nowrap;
 }
 
+.footer__link:hover {
+  color: #969696;
+  transition: color 0.4s ease-out;
+}
+
 .footer__row {
   padding-right: 26px;
 }
