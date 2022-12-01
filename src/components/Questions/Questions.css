@@ -26,6 +26,10 @@
   align-items: center;
 }
 
+.questions__section-box {
+  display: none;
+}
+
 .questions__box {
     margin-bottom: 90px;
 }
@@ -36,12 +40,6 @@
   line-height: 123%;
   margin: 0;
 }
-
-
-/*.questions__images {*/
-/*  max-width: 263px;*/
-/*  max-height: 228px;*/
-/*}*/
 
 .questions__images {
   width: 263px;
@@ -84,6 +82,10 @@
 
   .questions__images {
     display: none;
+  }
+  .questions__section-box {
+    display: block;
+    margin-bottom: 20px;
   }
 }
 
