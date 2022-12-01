@@ -24,7 +24,7 @@ body {
 
 #app {
   min-height: 100vh;
-  min-width: 380px;
+  min-width: 320px;
   display: flex;
   flex-direction: column;
   width: 100%;
