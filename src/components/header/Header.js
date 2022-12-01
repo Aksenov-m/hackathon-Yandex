@@ -5,7 +5,6 @@ import Navigation from "../Navigation/Navigation";
 import Logo from "../Logo/Logo";
 
 function Header() {
-
   // Стейт, отвечающий за бургер
   const [isBurgerOpen, setBurgerOpen] = useState(false);
 

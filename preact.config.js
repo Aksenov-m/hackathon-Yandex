@@ -1,3 +1,3 @@
 export default (config) => {
- config.output.publicPath = '/hackathon-Yandex/';
- };
+  config.output.publicPath = '/hackathon-Yandex/';
+};

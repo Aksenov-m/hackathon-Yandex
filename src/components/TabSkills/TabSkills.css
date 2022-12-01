@@ -2,7 +2,7 @@
   padding: 15px 35px;
   box-sizing: border-box;
   border-radius: 50px;
-  border: 1px solid #969696;
+  border: 1px solid #000;
   background: transparent;
   margin-bottom: 35px;
   cursor: pointer;
@@ -12,7 +12,7 @@
 }
 
 .active, .tabSkills__text:hover {
-  background: #969696;
+  background: #000;
   color: #FFFFFF;
 }
 
@@ -22,8 +22,22 @@
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 767px) {
-  .tabSkills__text {
+@media screen and (max-width: 1023px) {
+  .tabSkills__text_size_fix {
+    width: 250px;
+  }
+}
 
+@media screen and (max-width: 767px) {
+
+  .tabSkills__text {
+    padding: 8px 35px;
+    margin-bottom: 20px;
+  }
+
+  .tabSkills__text_size_fix {
+    width: 180px;
+    margin-right: 21px;
+    padding: 8px 5px;
   }
 }

@@ -27,7 +27,7 @@
 }
 
 .questions__box {
-    margin-bottom: 60px;
+    margin-bottom: 90px;
 }
 
 .questions__description {
@@ -37,37 +37,64 @@
   margin: 0;
 }
 
+
+/*.questions__images {*/
+/*  max-width: 263px;*/
+/*  max-height: 228px;*/
+/*}*/
+
 .questions__images {
-  max-width: 263px;
-  max-height: 228px;
+  width: 263px;
+  height: 228px;
+  background-image: url("../../images-gutkati/message.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.questions__box-hidden {
+  display: none;
 }
 
 @media screen and (max-width: 1279px) {
   .questions__main {
     max-width: 920px;
   }
+
+  .questions__section-description {
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 1023px) {
   .questions__main {
-    max-width: 760px;
-  }
-
-  .questions__section-description {
-    margin-left: 40px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .questions__main {
     max-width: 660px;
   }
 
-  .questions__images {
-    display: none;
+  .skills__section-tabBtn{
+    margin: 0;
   }
 
   .questions__container-tab {
     flex-direction: column;
   }
+
+  .questions__section-description {
+    display: none;
+  }
+
+  .questions__images {
+    display: none;
+  }
+}
+
+.questions__box-hidden {
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .questions__main {
+    max-width: 345px;
+    padding: 30px 0 70px 0;
+  }
+
 }
