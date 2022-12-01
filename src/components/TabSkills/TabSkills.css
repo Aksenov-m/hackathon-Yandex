@@ -30,10 +30,10 @@
 }
 
 @media screen and (max-width: 767px) {
-
   .tabSkills__text {
     padding: 8px 35px;
     margin-bottom: 20px;
+    width: 345px;
   }
 
   .tabSkills__text_size_fix {
