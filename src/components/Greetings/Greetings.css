@@ -87,6 +87,11 @@
   animation: typedjsBlink 0.7s infinite;
 }
 
+.greetings__link:hover {
+  box-shadow: 0px 4px 4px 0px #00000033;
+  transition: box-shadow 0.4s ease-out;
+}
+
 @keyframes typedjsBlink {
   50% {
     opacity: 0;
@@ -169,6 +174,7 @@
   }
 
   .greetings__subtitle {
+    text-align: center;
     font-size: 20px;
     line-height: 23px;
   }
@@ -186,10 +192,7 @@
   }
 
   .greetings__link {
-    width: 345px;
-  }
-
-  .greetings__link {
+    width: 100%;
     text-align: center;
     font-size: 16px;
     line-height: 19px;

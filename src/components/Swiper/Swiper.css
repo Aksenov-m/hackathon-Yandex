@@ -9,6 +9,9 @@
   max-width: 700px;
 }
 
+.swiper__slide{
+  padding-bottom: 45px;
+}
 
 
 /*.swiper-slide {
@@ -40,9 +43,10 @@
 }
 
 
-.swiper{
+
+/*.swiper{
   max-width: 1440px;
-}
+}*/
 
 .swiper-pagination-bullets {
   /*margin-bottom: -10px; работает*/
@@ -62,6 +66,17 @@
     margin-left: 0px;
     position: absolute;
     margin-top: 0
+  }
+  .swiper-button-next:hover::after{
+    color: #969696;
+    transition: color 0.4s ease-out;
+  }
+  .swiper-button-prev:hover::after{
+    color: #969696;
+    transition: color 0.4s ease-out;
+  }
+  .swiper{
+    max-width: 1440px;
   }
 }
 
@@ -88,3 +103,8 @@
   }
 
 
+  @media screen and (max-width: 599px) {
+    .swiper{
+      max-width: 375px;
+    }
+  }

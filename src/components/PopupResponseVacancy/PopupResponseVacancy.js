@@ -11,7 +11,7 @@ const PopupResponseVacancy = ({isOpen, onClose, stopPropagation}) => {
       stopPropagation={stopPropagation}
     >
       <iframe src="https://forms.yandex.ru/u/6384746cf47e73e667b8b8ee/?iframe=1" frameBorder="0"
-              name="ya-form-6384746cf47e73e667b8b8ee" width="650" />
+              name="ya-form-6384746cf47e73e667b8b8ee" width="100%" />
     </PopupWithForm>
   );
 };

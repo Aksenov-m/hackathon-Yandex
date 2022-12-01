@@ -3,9 +3,7 @@
   padding-bottom: 100px;
   width: 100%;
   /*max-width: 1111px*/
-  background-color: #F8F8F8;;
-  padding-left: 165px;
-  padding-right: 165px;
+  background-color: #F8F8F8;
 }
 
 .vacancies__box{
@@ -30,16 +28,19 @@
   font-size: 32px;
   line-height: 38px;
   padding: 0;
-  color: #181818
+  color: #181818;
+  cursor: pointer;
 }
 
 .vacancies__button_rewiew{
   max-width: 287px;
   margin-top: 45px;
+  cursor: pointer
 }
 
 .vacancies__button_master{
-  max-width:283px
+  max-width:283px;
+  cursor: pointer
 }
 
 .vacancies__button_active::after{
@@ -96,9 +97,15 @@
 }
 
 @media screen and (max-width: 1279px) {
+  .vacancies__box{
+    max-width: 920px;
+  }
 }
 
 @media screen and (max-width: 1023px) {
+  .vacancies__box{
+    max-width: 680px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -115,6 +122,7 @@
   .vacancies__box{
     width: 100%;
     margin: 0 auto;
+    max-width: 345px;
   }
 
   .vacancies__title{
