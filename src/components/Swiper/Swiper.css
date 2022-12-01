@@ -9,6 +9,8 @@
   max-width: 700px;
 }
 
+
+
 /*.swiper-slide {
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -52,12 +54,14 @@
     display: block;
     margin-right: 0px;
     position: absolute;
+    margin-top: 0
   }
   .swiper-button-next::after {
     /*display: none;*/
     display: block;
     margin-left: 0px;
     position: absolute;
+    margin-top: 0
   }
 }
 
@@ -71,6 +75,16 @@
     align-items: center;
     justify-content: center;
     margin:0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    .swiper-button-prev::after {
+      margin-top: -40px;
+    }
+
+    .swiper-button-next::after {
+      margin-top: -40px;
+    }
   }
 
 

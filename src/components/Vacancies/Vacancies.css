@@ -30,6 +30,7 @@
   font-size: 32px;
   line-height: 38px;
   padding: 0;
+  color: #181818
 }
 
 .vacancies__button_rewiew{
@@ -43,10 +44,12 @@
 
 .vacancies__button_active::after{
   background-image: url(../../images/vacanciesactive.svg);
+  transition: all .03s ease-out;
 }
 
 .vacancies__button_inactive::after{
   background-image: url(../../images/vacancies.svg);
+  transition: all .03s ease-out;
 }
 .vacancies__button::after{
   width: 25px;

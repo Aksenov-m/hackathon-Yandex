@@ -18,7 +18,7 @@
 
 .vacancy-card:hover{
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-  transform: translate(0px,-5px);
+  /*transform: translate(0px,-5px);*/
 }
 
 .vacancy-card__title{
@@ -49,6 +49,11 @@
   padding: 0;
   display: block;
   text-decoration: none
+}
+
+.vacancy-card__button:hover{
+  color: #969696;
+  transition: color 0.4s ease-out;
 }
 
 .vacancy-card__box{
@@ -102,6 +107,12 @@
   height: 30px;
   top: 35px;
   right: 24px;
+  opacity: 1;
+}
+
+.vacancy-card__share:hover{
+  opacity: 0.5;
+  transition: opacity 0.3s ease-out;
 }
 
 .vacancy-card__link{
@@ -166,6 +177,7 @@
     top: 40px;
     right: 20px
   }
+
   .vacancy-card__link{
     display: block;
     text-decoration: none;

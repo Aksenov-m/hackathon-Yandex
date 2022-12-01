@@ -12,8 +12,8 @@
   max-width: 1110px;
   margin: 0 auto;
   display: flex;
-  justify-content: flex-start;
   position: relative;
+  justify-content: space-between;
 }
 
 .not-found__title{
@@ -40,7 +40,8 @@
   background-image: url(../../images/notfoundpic.png);
   background-repeat: no-repeat;
   background-size: contain;
-  margin: 20px 0 0 70px;
+  margin: 20px 50px 0 0;
+  flex-shrink: 1;
 }
 
 .not-found__button{
@@ -55,9 +56,18 @@
   font-size: 20px;
   line-height: 23px;
   color: #181818;
+  transition: all 0.4s ease-out;
 }
 
-@media screen and (max-width: 1279px) {
+.not-found__button:hover{
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
+@media screen and (max-width: 1100px) {
+  .not-found__picture{
+    margin-left: 30px
+  }
 }
 
 @media screen and (max-width: 1023px) {
