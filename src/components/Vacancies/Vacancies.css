@@ -28,16 +28,19 @@
   font-size: 32px;
   line-height: 38px;
   padding: 0;
-  color: #181818
+  color: #181818;
+  cursor: pointer;
 }
 
 .vacancies__button_rewiew{
   max-width: 287px;
   margin-top: 45px;
+  cursor: pointer
 }
 
 .vacancies__button_master{
-  max-width:283px
+  max-width:283px;
+  cursor: pointer
 }
 
 .vacancies__button_active::after{

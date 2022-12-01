@@ -48,7 +48,8 @@
   margin: 0;
   padding: 0;
   display: block;
-  text-decoration: none
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .vacancy-card__button:hover{
@@ -87,17 +88,6 @@
   border-radius: 15px;
 }
 
-/*.vacancy-card__share{
-  background-image: url(../../images/shareicon2.svg);
-  position: absolute;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 25px;
-  height: 25px;
-  top: 20px;
-  right: 16px;
-}*/
-
 .vacancy-card__share{
   background-image: url(../../images/icontelegram.svg);
   position: absolute;
@@ -124,58 +114,51 @@
   100% {opacity: 1;}
 }
 
-@media screen and (max-width: 1279px) {
-}
-
-@media screen and (max-width: 1023px) {
-}
-
-@media screen and (max-width: 1073px) {
-  .vacancy-card {
-    /*flex-shrink: 3;
-    flex-grow: 0;*/
-  }
-}
-
 @media screen and (max-width: 767px) {
   .vacancy-card {
     width:  345px;
     height: 189px;
     padding: 0 25px;
-    /*flex-shrink: 0;*/
   }
+
   .vacancy-card__title{
     font-size: 18px;
     line-height: 21px;
     margin: 25px 0 15px;
     max-width: 254px;
   }
+
   .vacancy-card__amount{
     font-size: 16px;
     line-height: 19px;
   }
+
   .vacancy-card__button{
     font-size: 16px;
     line-height: 19px;
   }
+
   .vacancy-card__box{
     margin: 20px 0 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   .vacancy-card__views{
     display: none;
   }
-  .vacancy-card__share{
-    background-image: url(../../images/shareicon2.svg);
+
+  .vacancy-card__share_mobile{
+    background-image: url(../../images/icontelegram.svg);
     position: absolute;
     background-repeat: no-repeat;
     background-size: contain;
     width: 30px;
     height: 30px;
-    top: 40px;
-    right: 20px
+    top: 25px;
+    right: 20px;
+    opacity: 1;
   }
 
   .vacancy-card__link{

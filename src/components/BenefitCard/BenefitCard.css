@@ -91,12 +91,11 @@
 
 @media screen and (max-width: 767px) {
   .benefits__item{
-    height: 275px;
-    padding: 25px;
-    width: 100%;
+    padding: 25px 20px;
+    width: 345px;
     margin: 0 auto;
     flex-shrink: 0;
-    height: 240px;
+    height: 210px;
   }
 
   .benefits__headline{

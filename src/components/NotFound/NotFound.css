@@ -55,6 +55,7 @@
   line-height: 23px;
   color: #181818;
   transition: all 0.4s ease-out;
+  cursor: pointer;
 }
 
 .not-found__button:hover{

@@ -25,45 +25,57 @@ export default () => {
       modules={[Pagination]}
     >
         <SwiperSlide>
-          <BenefitCard
-          style={'benefits__icon_1'}
-          title={'Менять жизнь людей к лучшему'}
-          about={'Тысячи наших студентов нуждаются в ваших знаниях и опыте — не бойтесь ими делиться'} />
+          <div class="swiper__slide">
+            <BenefitCard
+            style={'benefits__icon_1'}
+            title={'Менять жизнь людей к лучшему'}
+            about={'Тысячи наших студентов нуждаются в ваших знаниях и опыте — не бойтесь ими делиться'} />
+          </div>
         </SwiperSlide>
 
         <SwiperSlide>
-          <BenefitCard
-          style={'benefits__icon_2'}
-          title={'Учиться новому'}
-          about={'Вы узнаете, как давать обратную связь, выступать на публике и мотивировать людей'} />
+          <div class="swiper__slide">
+            <BenefitCard
+            style={'benefits__icon_2'}
+            title={'Учиться новому'}
+            about={'Вы узнаете, как давать обратную связь, выступать на публике и мотивировать людей'} />
+          </div>
         </SwiperSlide>
 
         <SwiperSlide>
-          <BenefitCard
-          style={'benefits__icon_3'}
-          title={'Развивать личный бренд'}
-          about={'Публикуйте статьи в нашем блоге и выступайте на мероприятиях, чтобы как можно больше людей узнали о вас как об эксперте'} />
+          <div class="swiper__slide">
+            <BenefitCard
+            style={'benefits__icon_3'}
+            title={'Развивать личный бренд'}
+            about={'Публикуйте статьи в нашем блоге и выступайте на мероприятиях, чтобы как можно больше людей узнали о вас как об эксперте'} />
+          </div>
         </SwiperSlide>
 
         <SwiperSlide>
-          <BenefitCard
-          style={'benefits__icon_4'}
-          title={'Oбщаться с людьми из EdTech'}
-          about={'Cтанете частью сообщества экспертов и посмотрите на мир онлайн-образования изнутри'} />
+          <div class="swiper__slide">
+            <BenefitCard
+            style={'benefits__icon_4'}
+            title={'Oбщаться с людьми из EdTech'}
+            about={'Cтанете частью сообщества экспертов и посмотрите на мир онлайн-образования изнутри'} />
+          </div>
         </SwiperSlide>
 
         <SwiperSlide>
-          <BenefitCard
-          style={'benefits__icon_5'}
-          title={'Иметь доход от 35 до 50 тысяч ₽ в месяц'}
-          about={'Удаленно, 2–3 часа в день, график выбираете сами'} />
+          <div class="swiper__slide">
+            <BenefitCard
+            style={'benefits__icon_5'}
+            title={'Получать 35-50 тыс. ₽ в месяц'}
+            about={'Удаленно, 2–3 часа в день, график выбираете сами'} />
+          </div>
         </SwiperSlide>
 
         <SwiperSlide>
-        <BenefitCard
-        style={'benefits__icon_6'}
-        title={'Расти внутри своей роли'}
-        about={'Вы сможете стать старшим наставником или сеньор-ревьюером'} />
+          <div class="swiper__slide">
+            <BenefitCard
+            style={'benefits__icon_6'}
+            title={'Расти внутри своей роли'}
+            about={'Вы сможете стать старшим наставником или сеньор-ревьюером'} />
+          </div>
         </SwiperSlide>
     </Swiper>
   );

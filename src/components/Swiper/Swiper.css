@@ -9,6 +9,9 @@
   max-width: 700px;
 }
 
+.swiper__slide{
+  padding-bottom: 45px;
+}
 
 
 /*.swiper-slide {
@@ -63,6 +66,14 @@
     margin-left: 0px;
     position: absolute;
     margin-top: 0
+  }
+  .swiper-button-next:hover::after{
+    color: #969696;
+    transition: color 0.4s ease-out;
+  }
+  .swiper-button-prev:hover::after{
+    color: #969696;
+    transition: color 0.4s ease-out;
   }
   .swiper{
     max-width: 1440px;
