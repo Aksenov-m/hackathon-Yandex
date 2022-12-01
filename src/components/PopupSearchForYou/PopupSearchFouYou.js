@@ -3,7 +3,7 @@ import PopupWithForm from "../PopupWithForm/PopupWithForm";
 
 // форма "Не нашли себя!"
 
-const PopupSearchForYou = ({isOpen, onClose, stopPropagation}) => {
+const PopupSearchFouYou = ({isOpen, onClose, stopPropagation}) => {
   return (
     <PopupWithForm
       isOpen={isOpen}
@@ -16,4 +16,4 @@ const PopupSearchForYou = ({isOpen, onClose, stopPropagation}) => {
   );
 };
 
-export default PopupSearchForYou;
+export default PopupSearchFouYou;

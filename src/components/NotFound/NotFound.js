@@ -1,7 +1,9 @@
 import { h } from 'preact';
 import FormButton from '../FormButton/FormButton';
+import PopupSearchFouYou from '../PopupSearchForYou/PopupSearchFouYou';
 
-const NotFound = () => (
+const NotFound = ({isOpen,onClose,stopPropagation,openPopup}) => (
+
 	<section class ="not-found">
     <div class ="not-found__box">
       <div class='not-found__group'>
@@ -10,8 +12,13 @@ const NotFound = () => (
 интересно поработать с нами, заполните нашу форму</p>
       </div>
       <div class='not-found__picture' />
-      <FormButton text={'Заполнить форму'} style={'not-found__button'} />
+      <FormButton text={'Заполнить форму'} style={'not-found__button'} onClick={openPopup} />
     </div>
+    <PopupSearchFouYou
+        isOpen={isOpen}
+        onClose={onClose}
+        stopPropagation={stopPropagation}
+      />
 	</section>
 );
 
