@@ -2,7 +2,7 @@ import {useEffect,useState} from 'preact/hooks';
 import {VACANCY_CARDS_MASTER, VACANCY_CARDS_REWIEWER} from '../../utils/constantsVacancies.js.js';
 import VacaciesField from '../VacanciesField/VacanciesField';
 
-const Vacancies = () => {
+const Vacancies = ({isOpen,onClose,stopPropagation,openPopup}) => {
 
   const [filteredMaster, setFilteredMaster] = useState(VACANCY_CARDS_MASTER);
   const [filteredRewier, setFilteredRewier] = useState(VACANCY_CARDS_REWIEWER);
@@ -68,6 +68,10 @@ const vacancyFilter = (argument) => {
         handlefilterVacancy = {vacancyFilter}
         newStyle={listOpen}
         cards={filteredMaster}
+        isOpen={isOpen}
+        onClose={onClose}
+        stopPropagation={stopPropagation}
+        openPopup={openPopup}
         />}
 
         <button class={`vacancies__button_rewiew
@@ -79,6 +83,10 @@ const vacancyFilter = (argument) => {
         handlefilterVacancy = {vacancyFilter}
         newStyle={listOpen}
         cards={filteredRewier}
+        isOpen={isOpen}
+        onClose={onClose}
+        stopPropagation={stopPropagation}
+        openPopup={openPopup}
         />}
        </div>
        </div>

@@ -3,7 +3,7 @@ import BenefitCard from '../BenefitCard/BenefitCard';
 import SwiperBenefits from '../Swiper/SwiperBenefits'
 
 const Benefits = () => (
-	<section class ="benefits app__margins" id='benefits'>
+	<section class ="benefits" id='benefits'>
     <div class ="benefits__box">
       <h2 class ="benefits__title">С нами интересно и полезно</h2>
       <ul class='benefits__list'>

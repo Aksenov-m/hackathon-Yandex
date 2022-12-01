@@ -1,7 +1,7 @@
 import { h } from 'preact';
 
 const HowBeExpert = () => (
-  <section class ="how-become app__margins">
+  <section class ="how-become">
     <div class ="how-become__box">
       <div class='how-become__group'>
         <h2 class="how-become__title">Как стать экспертом?</h2>

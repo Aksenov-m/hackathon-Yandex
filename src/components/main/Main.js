@@ -14,14 +14,26 @@ import {useState} from "preact/hooks";
 const Main = () => {
 
   const [isOpenPopupInterview, setIsOpenPopupInterview] = useState(false)
+  const [isOpenPopupSearchYou, setIsOpenPopupSearchYou] = useState(false)
+  const [isOpenPopupResponse, setIsOpenPopupResponse] = useState(false)
   // eslint-disable-next-line no-unused-vars
 
   const openPopup = () => {
     setIsOpenPopupInterview(true)
   }
 
+  const openSearchPopup = () => {
+    setIsOpenPopupSearchYou(true)
+  }
+
+  const openResponsePopup = () => {
+    setIsOpenPopupResponse(true)
+  }
+
   const closeAllPopup = () => {
     setIsOpenPopupInterview(false)
+    setIsOpenPopupSearchYou(false)
+    setIsOpenPopupResponse(false)
   }
 
   const stopPropagation = (e) => {
@@ -40,11 +52,16 @@ const Main = () => {
   />
   <HowBeExpert />
   <Benefits />
-  <Vacancies />
-  <NotFound isOpen={isOpenPopupInterview}
+  <Vacancies
+  isOpen={isOpenPopupResponse}
   onClose={closeAllPopup}
   stopPropagation={stopPropagation}
-  openPopup={openPopup} />
+  openPopup={openResponsePopup} />
+  <NotFound
+  isOpen={isOpenPopupSearchYou}
+  onClose={closeAllPopup}
+  stopPropagation={stopPropagation}
+  openPopup={openSearchPopup} />
   {/*<Сomment />*/}
   <Questions />
   <Stories />

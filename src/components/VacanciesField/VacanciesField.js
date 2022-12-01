@@ -2,7 +2,8 @@ import { h } from 'preact';
 import VacancyNavbar from '../VacancyNavbar/VacancyNavbar';
 import VacancyCard from '../vacancyCard/VacancyCard';
 
-const VacancyField = ({notFound,handlefilterVacancy,newStyle,cards}) => {
+const VacancyField = ({notFound,handlefilterVacancy,newStyle,cards,
+  isOpen,onClose,stopPropagation,openPopup}) => {
   return (
   <>
     <VacancyNavbar handlefilterVacancy = {handlefilterVacancy} />
@@ -21,7 +22,11 @@ const VacancyField = ({notFound,handlefilterVacancy,newStyle,cards}) => {
       (<VacancyCard key={card.id} text={card.text}
         views={card.views}
         link={card.link}
-        newStyle={newStyle} />))}
+        newStyle={newStyle}
+        isOpen={isOpen}
+        onClose={onClose}
+        stopPropagation={stopPropagation}
+        openPopup={openPopup} />))}
     </div>}
   </>)
 }

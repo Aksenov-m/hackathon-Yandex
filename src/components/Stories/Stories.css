@@ -1,13 +1,13 @@
 .stories{
+  max-width: 1110px;
   width: 100%;
   background-color:  #F8F8F8;;
-  padding-left: 165px;
   padding-bottom: 113px;
-  padding-right: 165px
+  margin: 0 auto;
 }
 
 .stories__box{
-  max-width: 1440px;
+  max-width: 1110px;
   margin: 0 auto;
 }
 
@@ -27,9 +27,17 @@
   max-width: 733px;
 }
 
-@media screen and (max-width: 1279px) {}
+@media screen and (max-width: 1279px) {
+  .stories__box{
+    max-width: 920px;
+  }
+}
+
 
 @media screen and (max-width: 1023px) {
+  .stories__box{
+    max-width: 680px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -37,6 +45,9 @@
     /*padding-left: 15px;*/
     padding: 0 0 70px 0;
     /*padding-right: 15px;*/
+  }
+  .stories__box{
+    max-width: 345px;
   }
   .stories__title{
     padding-left: 15px;
