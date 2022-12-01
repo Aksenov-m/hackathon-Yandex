@@ -1,14 +1,10 @@
+import {h} from 'preact';
 import TabSkills from "../TabSkills/TabSkills";
 import BlockDescription from "../blockDescription/BlockDescription";
 import PopupInterview from "../PopupInterview/PopupInterview";
 import ButtonLink from "../buttonLink/buttonLink";
 
 const Skills = ({isOpen, onClose, stopPropagation, openPopup}) => {
-
-  // const [active, setActive] = useState(false)
-  // const onClickBtn = () => {
-  //   setActive(true)
-  // }
 
   return (
     <section className='skills'>
@@ -141,15 +137,3 @@ const Skills = ({isOpen, onClose, stopPropagation, openPopup}) => {
 }
 
 export default Skills;
-
-
-// {profs.map(prof =>
-//     <TabSkills
-//       prof={prof}
-//       key={prof}
-//       //active={profs.prof === prof}
-//       isActive={isActive}
-//       onClick={activeBtn}
-//     />
-//
-//   )}
