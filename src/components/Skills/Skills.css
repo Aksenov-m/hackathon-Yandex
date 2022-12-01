@@ -129,6 +129,7 @@
   color: #ED6F5D;
   justify-content: center;
   transition: linear 0.2s;
+  border-radius: 50px;
 }
 
 .skills__btn:hover {

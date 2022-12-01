@@ -44,7 +44,7 @@ const Skills = ({isOpen, onClose, stopPropagation, openPopup}) => {
                   <p className='skills__text-test'>Пройдете короткий тест, чтобы узнать,
                     какая роль вам больше подходит</p>
                   <ButtonLink
-                    Class="greetings__link skills__btn"
+                    Class="skills__btn"
                     text="Кто я?"
                     onClick={openPopup}
                   />
