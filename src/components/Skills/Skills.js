@@ -37,7 +37,7 @@ const Skills = ({isOpen, onClose, stopPropagation, openPopup}) => {
             <div className='skills__container-btn skills__container-btn_hidden'>
               <BlockDescription>
                 <div className='skills__box-question'>
-                  <p className='skills__text-test'>Пройдете короткий тест, чтобы узнать,
+                  <p className='skills__text-test'>Пройдите короткий тест, чтобы узнать,
                     какая роль вам больше подходит</p>
                   <ButtonLink
                     Class="skills__btn"
