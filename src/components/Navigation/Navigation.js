@@ -53,10 +53,9 @@ const Navigation = (props) => {
         </li>
         <li className="navigation__list">
           <ButtonLink
-            href="https://practicum.yandex.ru/promo/hr_landing_1"
+            href="#vacancies"
             Class={`${props.burgerOpen ? "link_white" : "link_red"}`}
             text={`${props.burgerOpen ? "Роли" : "Откликнуться"}`}
-            target="_blank"
             onClick={props.closeBurger}
           />
         </li>
