@@ -1,6 +1,6 @@
 import {h} from 'preact';
 
-//import Greetings from '../Greetings/Greetings';
+import Greetings from '../Greetings/Greetings';
 import Skills from '../Skills/Skills';
 import Vacancies from '../Vacancies/Vacancies';
 //import Сomment from '../Сomment/Сomment';
@@ -10,7 +10,7 @@ import NotFound from '../NotFound/NotFound';
 import HowBeExpert from '../HowBeExpert/HowBeExpert';
 import Stories from '../Stories/Stories';
 import {useState} from "preact/hooks";
-import PopupInterview from "../PopupInterview/PopupInterview";
+//import PopupInterview from "../PopupInterview/PopupInterview";
 
 const Main = () => {
 
@@ -31,7 +31,7 @@ const Main = () => {
 
   return (
     <>
-      {/*<Greetings />*/}
+      <Greetings />
       <Skills
         isOpen={isOpenPopupInterview}
         onClose={closeAllPopup}
