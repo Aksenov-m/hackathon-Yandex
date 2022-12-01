@@ -129,6 +129,7 @@
   color: #ED6F5D;
   justify-content: center;
   transition: linear 0.2s;
+  border-radius: 50px;
 }
 
 .skills__btn:hover {
@@ -302,7 +303,8 @@
   }
 
   .skills__btn-visible {
-    display: flex;max-width: 344px;
+    display: flex;
+    max-width: 344px;
     margin-bottom: 50px;
   }
 
