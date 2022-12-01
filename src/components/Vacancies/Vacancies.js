@@ -2,7 +2,7 @@ import {useEffect,useState} from 'preact/hooks';
 import {VACANCY_CARDS_MASTER, VACANCY_CARDS_REWIEWER} from '../../utils/constantsVacancies.js.js';
 import VacaciesField from '../VacanciesField/VacanciesField';
 
-const Vacancies = () => {
+const Vacancies = ({isOpen,onClose,stopPropagation,openPopup}) => {
 
   const [filteredMaster, setFilteredMaster] = useState(VACANCY_CARDS_MASTER);
   const [filteredRewier, setFilteredRewier] = useState(VACANCY_CARDS_REWIEWER);
@@ -13,6 +13,8 @@ const Vacancies = () => {
 
 
 const vacancyFilter = (argument) => {
+  rewiew && filteredRewier.length === 0 ? setNotFound(true) : setNotFound(false);
+  mentor && filteredMaster.length === 0 ? setNotFound(true) : setNotFound(false);
   if(argument === 'all'){
     setFilteredMaster(VACANCY_CARDS_MASTER);
     setFilteredRewier(VACANCY_CARDS_REWIEWER);
@@ -21,12 +23,7 @@ const vacancyFilter = (argument) => {
     const NEW_VACANCY_CARDS__REWIEWER = [...VACANCY_CARDS_REWIEWER].filter(item => item.status === argument);
     setFilteredRewier(NEW_VACANCY_CARDS__REWIEWER)
     setFilteredMaster(NEW_VACANCY_CARDS_MASTER);
-    setListOpen(true)
-    if(NEW_VACANCY_CARDS__REWIEWER.length === 0 || NEW_VACANCY_CARDS_MASTER.length === 0){
-      setNotFound(true);
-    } else{
-      setNotFound(false);
-    }
+    setListOpen(true);
   }
 }
 
@@ -68,6 +65,10 @@ const vacancyFilter = (argument) => {
         handlefilterVacancy = {vacancyFilter}
         newStyle={listOpen}
         cards={filteredMaster}
+        isOpen={isOpen}
+        onClose={onClose}
+        stopPropagation={stopPropagation}
+        openPopup={openPopup}
         />}
 
         <button class={`vacancies__button_rewiew
@@ -79,6 +80,10 @@ const vacancyFilter = (argument) => {
         handlefilterVacancy = {vacancyFilter}
         newStyle={listOpen}
         cards={filteredRewier}
+        isOpen={isOpen}
+        onClose={onClose}
+        stopPropagation={stopPropagation}
+        openPopup={openPopup}
         />}
        </div>
        </div>

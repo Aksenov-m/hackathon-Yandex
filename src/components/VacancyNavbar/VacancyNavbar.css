@@ -21,6 +21,7 @@
   font-size: 20px;
   line-height: 23px;
   color: #969696;
+  cursor: pointer;
 }
 
 .vacancy__navbar-item_active{

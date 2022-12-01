@@ -3,7 +3,6 @@ import FormButton from '../FormButton/FormButton';
 import PopupSearchFouYou from '../PopupSearchForYou/PopupSearchFouYou';
 
 const NotFound = ({isOpen,onClose,stopPropagation,openPopup}) => (
-
 	<section class ="not-found">
     <div class ="not-found__box">
       <div class='not-found__group'>
