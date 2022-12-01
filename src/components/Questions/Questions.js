@@ -35,6 +35,7 @@ const Questions = () => {
                 </p>
               </BlockDescription>
             </div>
+
             <div className='questions__images' />
 
           </div>

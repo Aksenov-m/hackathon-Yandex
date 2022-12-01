@@ -1,18 +1,24 @@
 .greetings {
+  width: 100%;
+  background: #f8f8f8;
+  margin: 0 auto;
+}
+
+.greetings__main {
   max-width: 1110px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  background-color: rgba(121, 96, 96, 0.11);
+  background-color: #ffffff;
   border-radius: 20px;
   margin: 0 auto;
   margin-top: 95px;
-  padding: 28px 35px 28px 50px;
+  padding: 41px 130px 42px 60px;
 }
 
 .greetings__image {
-  width: 484px;
+  width: 320px;
   height: 100%;
   object-fit: cover;
 }
@@ -24,9 +30,12 @@
 
 .greetings__info {
   display: flex;
+  margin: 0 auto;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  margin: 0;
+  margin-top: 20px;
 }
 
 .greetings__title {
@@ -47,17 +56,17 @@
   font-weight: 500;
   font-size: 32px;
   line-height: 38px;
-  color: #181818;
+  color: #ed6f5d;
   padding: 0;
   margin: 0;
 }
 
 .greetings__paragraph {
-  width: 100%;
+  max-width: 490px;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 32px;
+  line-height: 123%;
   color: #181818;
   padding: 0;
   margin: 0;
@@ -66,17 +75,18 @@
 
 .subtitle__container {
   height: 38px;
-  margin-bottom: 30px;
+  margin-bottom: 51px;
 }
 
 .typed-cursor {
   font-size: 32px;
-  color: #181818;
+  color: #ed6f5d;
   opacity: 1;
   animation: typedjsBlink 0.7s infinite;
   -webkit-animation: typedjsBlink 0.7s infinite;
   animation: typedjsBlink 0.7s infinite;
 }
+
 @keyframes typedjsBlink {
   50% {
     opacity: 0;
@@ -93,9 +103,95 @@
     opacity: 1;
   }
 }
+
 .typed-fade-out {
   opacity: 0;
   transition: opacity 0.25s;
   -webkit-animation: 0;
   animation: 0;
+}
+
+@media screen and (max-width: 1279px) {
+  .greetings__main {
+    margin-top: 75px;
+    margin-left: 48px;
+    margin-right: 48px;
+  }
+
+  .greetings__image {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .greetings__main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 60px;
+    margin-left: 24px;
+    margin-right: 24px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .greetings__info {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .greetings__main {
+    position: relative;
+    margin: 0 15px;
+    margin-top: 58px;
+    padding: 0;
+    border-radius: 0;
+    background-color: transparent;
+  }
+
+  .greetings__image {
+    position: absolute;
+    margin: 0;
+  }
+
+  .greetings__image {
+    top: 214px;
+    width: auto;
+    height: 357px;
+  }
+
+  .greetings__title {
+    text-align: center;
+    font-size: 32px;
+    line-height: 37.5px;
+    margin-bottom: 9px;
+  }
+
+  .greetings__subtitle {
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .greetings__paragraph {
+    max-width: 273px;
+    text-align: center;
+    margin-bottom: 424px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .subtitle__container {
+    margin-bottom: 24px;
+  }
+
+  .greetings__link {
+    width: 345px;
+  }
+
+  .greetings__link {
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
