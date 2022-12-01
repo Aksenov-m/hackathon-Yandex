@@ -1,6 +1,6 @@
 .skills {
   width: 100%;
-  background: #F5F5F5;
+  background: #F8F8F8;
   color: #181818;
 }
 
@@ -173,6 +173,7 @@
 }
 
 .skills__text {
+  max-width: 234px;
   margin: 0 0 0 20px;
   font-style: normal;
   font-weight: 400;
@@ -181,11 +182,18 @@
   max-width: 234px;
 }
 
-/*.skills__img {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-}*/
+
+.skills__text_margin_bottom {
+  margin: 0 0 20px 0;
+}
+
+/*.skills__img {*/
+/*  width: 90px;*/
+/*  height: 90px;*/
+/*  border-radius: 50%;*/
+/*  background-repeat: no-repeat;*/
+/*  background-size: contain;*/
+/*}*/
 
 
 .skills__img {
@@ -193,8 +201,6 @@
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .skills__img-yes {
@@ -202,15 +208,13 @@
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .skills__img-plus {
   background-image: url("../../images-gutkati/plus.svg");
   background-repeat: no-repeat;
-  background-repeat: no-repeat;
-  background-size: contain;
+  background-position: center;
+
   width: 90px;
   height: 90px;
   border-radius: 50%;

@@ -1,5 +1,5 @@
-import { h } from 'preact'
-import { useRef, useEffect } from 'preact/hooks';
+import { h } from "preact";
+import { useRef, useEffect } from "preact/hooks";
 import Typed from "typed.js";
 
 import foto from "../../imagesA/Illustration.png";
@@ -14,16 +14,16 @@ function Greetings() {
   useEffect(() => {
     const options = {
       strings: [
-        "Делитесь опытом и знаниями",
-        "Меняйте жизнь людей к лучшему",
-        "Выбирайте сколько зарабатывать",
+        "Делиться опытом и знаниями",
+        "Менять жизнь людей к лучшему",
+        "Вдохновлять и вдохновляться",
       ],
       typeSpeed: 60,
       backSpeed: 60,
       backDelay: 900,
       loop: true,
       showCursor: true,
-      cursorChar: '|',
+      cursorChar: "|",
       autoInsertCss: true,
     };
 
@@ -38,20 +38,25 @@ function Greetings() {
   }, []);
 
   return (
-    <section class="greetings app__margins" id="greetings">
-      <article class="greetings__info">
-        <h1 class="greetings__title">Помочь войти в IT и</h1>
-        <div class="subtitle__container">
-          <span class="greetings__subtitle" ref={el}  />
-        </div>
-        <p class="greetings__paragraph">Станьте наставником или ревьюером для студентов, которые пришли связать свою жизнь с IT</p>
-        <ButtonLink
-          href="#vacancies"
-          Class="greetings__link"
-          text="Уже хочу делиться опытом!"
-        />
-      </article>
-      <img className="greetings__image" src={foto} alt="Фото иллюстрация." />
+    <section class="greetings" id="greetings">
+      <div class="greetings__main">
+        <article class="greetings__info">
+          <h1 class="greetings__title">Помочь войти в IT и</h1>
+          <div class="subtitle__container">
+            <span class="greetings__subtitle" ref={el} />
+          </div>
+          <p class="greetings__paragraph">
+            Станьте наставником или ревьюером для студентов, которые пришли
+            связать свою жизнь с IT
+          </p>
+          <ButtonLink
+            href="#vacancies"
+            Class="greetings__link"
+            text="Уже хочу делиться опытом!"
+          />
+        </article>
+        <img className="greetings__image" src={foto} alt="Фото иллюстрация." />
+      </div>
     </section>
   );
 }

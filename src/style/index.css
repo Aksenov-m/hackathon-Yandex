@@ -2,6 +2,7 @@
 @import url(../vendor/fonts/fonts.css);
 @import url(../components/buttonLink/buttonLink.css);
 @import url(../components/app/App.css);
+@import url(../components/Logo/Logo.css);
 @import url(../components/header/Header.css);
 @import url(../components/Navigation/Navigation.css);
 @import url(../components/main/Main.css);
@@ -23,7 +24,6 @@
 @import url(../components/BenefitCard/BenefitCard.css);
 @import url(../components/FormButton/FormButton.css);
 @import url(../components/footer/Footer.css);
-@import url(../components/Logo/Logo.css);
 @import url(swiper/swiper-bundle.min.css);
 @import url(../components/Swiper/Swiper.css);
 
