@@ -1,15 +1,13 @@
 import {h} from 'preact';
 
 function PopupWithForm(props) {
+
     return (
-        <div className={`popup popup_type_${props.name} ${props.isOpen ? 'popup_opened' : ''}`}>
-            <div className="popup__modal">
+        <div className={`popup ${props.isOpen ? 'popup_opened' : ''}`} onClick={props.onClose}>
+            <div className="popup__modal" onClick={props.stopPropagation}>
                 <button onClick={props.onClose} type="button" aria-label="закрыть"
                         className="popup__close blackout" />
-                <form name={props.name}
-                      className={`popup__form popup__form_type${props.name}`}>
-                    {props.children}
-                </form>
+                {props.children}
             </div>
         </div>
     )
