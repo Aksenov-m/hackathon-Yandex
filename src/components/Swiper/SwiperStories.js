@@ -20,42 +20,36 @@ export default () => {
       navigation={true}
       modules={[Navigation]}
       spaceBetween={35}
-      slidesPerView={1}
+      /*slidesPerView={1}
+      slidesPerGroup={1}*/
+      slidesPerView= {'auto'}
+      /*centeredSlides={true}*/
       loop={true}
+      centerInsufficientSlides={true}
       breakpoints={{
-        /*500: {
-          slidesPerView: 1.4,
-          //spaceBetween: 10,
+        /*614: {
+          slidesPerView: 1,
+          //slidesPerView: 2.2,
+          spaceBetween: 35,
+          //navigation: false,
+        },
+        800: {
+          slidesPerView: 2,
+          //slidesPerView: 2.2,
+          spaceBetween: 35,
+          //navigation: false,
         },*/
-        600: {
-          slidesPerView: 2,
-          //spaceBetween: 10,
-        },
-        1024: {
-          slidesPerView: 2,
-          //navigation: false,
-          spaceBetween: 35,
-        },
-        1100: {
-          slidesPerView: 2,
-          //slidesPerView: 2.2,
-          spaceBetween: 35,
-          //navigation: false,
-        },
         1200: {
-          slidesPerView: 2,
-          //slidesPerView: 2.2,
-          spaceBetween: 35,
-          //navigation: false,
-        },
-        1390: {
           slidesPerView: 3,
-          spaceBetween: 35,
+          /*slidesPerGroup: 3,*/
+          /*spaceBetween: 35,*/
           //navigation: false,
+          centeredSlides: false,
+          /*centeredSlidesBounds: true,*/
         },
       }}
     >
-    <div class="slider_slide-box swiper-wrapper">
+    <div class="slider_slide-box">
       <SwiperSlide>
         <StoriesCard />
       </SwiperSlide>

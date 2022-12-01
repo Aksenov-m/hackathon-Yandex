@@ -10,7 +10,7 @@ const NotFound = () => (
 интересно поработать с нами, заполните нашу форму</p>
       </div>
       <div class='not-found__picture' />
-      <FormButton text={'заполнить форму'} style={'not-found__button'} />
+      <FormButton text={'Заполнить форму'} style={'not-found__button'} />
     </div>
 	</section>
 );

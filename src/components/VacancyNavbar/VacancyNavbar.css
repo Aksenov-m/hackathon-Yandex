@@ -1,5 +1,5 @@
 .vacancy__navbar{
-  max-width: 740px;
+  max-width: 951px;
   margin-top: 35px;
   margin-bottom: 47px;
 }
@@ -27,14 +27,21 @@
   color: #181818;
 }
 
-@media screen and (max-width: 1100px) {
-  .vacancy__navbar-list{
-    gap: 18px;
-  }
+@media screen and (max-width: 1262px) {
   .vacancy__navbar{
     max-width: 640px;
     flex-shrink: 2;
   }
+}
+
+@media screen and (max-width: 1100px) {
+  .vacancy__navbar-list{
+    gap: 18px;
+  }
+  /*.vacancy__navbar{
+    max-width: 640px;
+    flex-shrink: 2;
+  }*/
 }
 
 @media screen and (max-width: 1103px) {
@@ -60,3 +67,4 @@
     gap: 18px;
   }
 }
+
