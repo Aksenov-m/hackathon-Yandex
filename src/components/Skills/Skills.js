@@ -1,25 +1,14 @@
-import {useState} from 'preact/hooks';
 import TabSkills from "../TabSkills/TabSkills";
 import BlockDescription from "../blockDescription/BlockDescription";
 import PopupInterview from "../PopupInterview/PopupInterview";
 import ButtonLink from "../buttonLink/buttonLink";
 
-const Skills = () => {
+const Skills = ({isOpen, onClose, stopPropagation, openPopup}) => {
 
-  const [isOpenPopupInterview, setIsOpenPopupInterview] = useState(false)
-  // eslint-disable-next-line no-unused-vars
-
-  const openPopup = () => {
-    setIsOpenPopupInterview(true)
-  }
-
-  const closeAllPopup = () => {
-    setIsOpenPopupInterview(false)
-  }
-
-  const stopPropagation = (e) => {
-    e.stopPropagation()
-  }
+  // const [active, setActive] = useState(false)
+  // const onClickBtn = () => {
+  //   setActive(true)
+  // }
 
   return (
     <section className='skills'>
@@ -31,13 +20,24 @@ const Skills = () => {
         <div className='skills__container-tab'>
           <div className='skills__section-tabBtn'>
             <ul className='skills__list skills__list_style_none skills__list_flex_row skills__list_scroll'>
-              <TabSkills title={'Программирование'} class={'tabSkills__text_size_fix'} />
-              <TabSkills title={'Дизайн'} class={'active tabSkills__text_size_fix'} />
-              <TabSkills title={'Анализ данных'} class={'tabSkills__text_size_fix'} />
-              <TabSkills title={'Маркетинг'} class={'tabSkills__text_size_fix'} />
-              <TabSkills title={'Менеджмент'} class={'tabSkills__text_size_fix'} />
+              <TabSkills title={'Программирование'}
+                         class={'tabSkills__text_size_fix'}
+              />
+              <TabSkills title={'Дизайн'}
+                         class={'tabSkills__text_size_fix active'}
+              />
+              <TabSkills title={'Анализ данных'}
+                         class={'tabSkills__text_size_fix'}
+              />
+              <TabSkills title={'Маркетинг'}
+                         class={'tabSkills__text_size_fix'}
+              />
+              <TabSkills title={'Менеджмент'}
+                         class={'tabSkills__text_size_fix'}
+              />
 
             </ul>
+
             <div className='skills__container-btn skills__container-btn_hidden'>
               <BlockDescription>
                 <div className='skills__box-question'>
@@ -113,7 +113,6 @@ const Skills = () => {
           <h3 className='skills__subtitle'>Условия работы</h3>
           <div className='skills__section-row'>
             <div className='skills__item'>
-
               <div className='skills__img-smile skills__img' />
               <p className='skills__text'>В группе около 50 человек</p>
             </div>
@@ -123,22 +122,6 @@ const Skills = () => {
             </div>
             <div className='skills__item'>
               <div className='skills__img-plus skills__img' />
-
-              <div className='skills__img' />
-
-              <p className='skills__text'>В группе около 50 человек</p>
-            </div>
-            <div className='skills__item'>
-
-              <div className='skills__img-yes' />
-
-
-              <p className='skills__text'>2-3 часа в день</p>
-            </div>
-            <div className='skills__item'>
-
-              <div className='skills__img-plus' />
-
               <p className='skills__text'>доход от 35 до 55 тысяч рублей в месяц </p>
             </div>
           </div>
@@ -147,8 +130,8 @@ const Skills = () => {
       </div>
 
       <PopupInterview
-        isOpen={isOpenPopupInterview}
-        onClose={closeAllPopup}
+        isOpen={isOpen}
+        onClose={onClose}
         stopPropagation={stopPropagation}
       />
     </section>
