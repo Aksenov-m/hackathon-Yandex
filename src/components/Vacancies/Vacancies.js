@@ -1,6 +1,7 @@
 import {useEffect,useState} from 'preact/hooks';
 import {VACANCY_CARDS_MASTER, VACANCY_CARDS_REWIEWER} from '../../utils/constantsVacancies.js.js';
 import VacaciesField from '../VacanciesField/VacanciesField';
+import PopupResponseVacancy from '../PopupResponseVacancy/PopupResponseVacancy'
 
 const Vacancies = ({isOpen,onClose,stopPropagation,openPopup}) => {
 
@@ -55,6 +56,11 @@ const vacancyFilter = (argument) => {
 
   <section class ="vacancies" id="vacancies">
     <div class='vacancies__box'>
+    <PopupResponseVacancy
+        isOpen={isOpen}
+        onClose={onClose}
+        stopPropagation={stopPropagation}
+      />
       <h1 class='vacancies__title'>Роли в нашей команде</h1>
       <div class='vacancies__button-box'>
        <button class={`${mentor ? 'vacancies__button vacancies__button_active'
@@ -65,9 +71,6 @@ const vacancyFilter = (argument) => {
         handlefilterVacancy = {vacancyFilter}
         newStyle={listOpen}
         cards={filteredMaster}
-        isOpen={isOpen}
-        onClose={onClose}
-        stopPropagation={stopPropagation}
         openPopup={openPopup}
         />}
 
@@ -80,9 +83,6 @@ const vacancyFilter = (argument) => {
         handlefilterVacancy = {vacancyFilter}
         newStyle={listOpen}
         cards={filteredRewier}
-        isOpen={isOpen}
-        onClose={onClose}
-        stopPropagation={stopPropagation}
         openPopup={openPopup}
         />}
        </div>
