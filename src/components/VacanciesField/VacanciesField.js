@@ -3,7 +3,7 @@ import VacancyNavbar from '../VacancyNavbar/VacancyNavbar';
 import VacancyCard from '../vacancyCard/VacancyCard';
 
 const VacancyField = ({notFound,handlefilterVacancy,newStyle,cards,
-  isOpen,onClose,stopPropagation,openPopup}) => {
+  /*isOpen,onClose,stopPropagation,*/openPopup}) => {
   return (
   <>
     <VacancyNavbar handlefilterVacancy = {handlefilterVacancy} />
@@ -23,9 +23,9 @@ const VacancyField = ({notFound,handlefilterVacancy,newStyle,cards,
         views={card.views}
         link={card.link}
         newStyle={newStyle}
-        isOpen={isOpen}
+        /*isOpen={isOpen}
         onClose={onClose}
-        stopPropagation={stopPropagation}
+        stopPropagation={stopPropagation}*/
         openPopup={openPopup} />))}
     </div>}
   </>)
