@@ -108,24 +108,9 @@ const Skills = ({isOpen, onClose, stopPropagation, openPopup}) => {
               <BlockDescription>
                 <ul className='skills__list'>
                   {rolesMentor.map((role) => (
-                    <Roles key={role} text={role}/>
+                    <Roles key={role} text={role} />
                     )
                   )}
-
-                  {/*<li className='skills__description-item'>*/}
-                  {/*  Помогать студентам ставить цели, рефлексировать*/}
-                  {/*  и делать выводы*/}
-                  {/*</li>*/}
-                  {/*<li className='skills__description-item'>*/}
-                  {/*  Отвечать на их вопросы в чате*/}
-                  {/*</li>*/}
-                  {/*<li className='skills__description-item'>*/}
-                  {/*  Проводить вебинары 2 раза в месяц*/}
-                  {/*  и давать обратную связь*/}
-                  {/*</li>*/}
-                  {/*<li className='skills__description-item'>*/}
-                  {/*  Делиться опытом и мотивировать*/}
-                  {/*</li>*/}
                 </ul>
               </BlockDescription>
             </div>
@@ -137,21 +122,9 @@ const Skills = ({isOpen, onClose, stopPropagation, openPopup}) => {
                 <ul className='skills__list'>
 
                   {rolesReviewer.map((role) => (
-                    <Roles key={role} text={role}/>
+                    <Roles key={role} text={role} />
                     )
                   )}
-                  {/*<li className='skills__description-item'>*/}
-                  {/*  Проверять макеты студентов*/}
-                  {/*</li>*/}
-                  {/*<li className='skills__description-item'>*/}
-                  {/*  Простыми словами объяснять им их ошибки*/}
-                  {/*</li>*/}
-                  {/*<li className='skills__description-item'>*/}
-                  {/*  Давать корректирующую обратную связь*/}
-                  {/*</li>*/}
-                  {/*<li className='skills__description-item'>*/}
-                  {/*  Оценивать работы - зачёт/незачёт*/}
-                  {/*</li>*/}
                 </ul>
               </BlockDescription>
             </div>
