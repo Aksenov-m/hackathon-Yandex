@@ -59,7 +59,7 @@
 .skills__section-description {
   display: flex;
   flex-direction: column;
-  max-width: 545px;
+  width: 545px;
 }
 
 .skills__subtitle {
@@ -80,6 +80,7 @@
 
 .skills__description-item {
   margin-bottom: 15px;
+  line-height: 25px;
 }
 
 .skills__description-item:last-of-type {
@@ -107,7 +108,7 @@
 }
 
 .skills__container-btn {
-  margin: 20px auto 0;
+  margin: 40px auto 0;
   display: flex;
   align-items: center;
 }
@@ -343,6 +344,7 @@
 
   .skills__section-description {
     margin-left: 0;
+    max-width: 347px;
   }
 
   .skills__list_flex_row {
