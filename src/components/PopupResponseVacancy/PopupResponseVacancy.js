@@ -17,6 +17,3 @@ const PopupResponseVacancy = ({isOpen, onClose, stopPropagation}) => {
 };
 
 export default PopupResponseVacancy;
-
-
-

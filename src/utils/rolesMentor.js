@@ -40,5 +40,3 @@ export {
   rolesMentor4,
   rolesMentor5
 }
-
-
