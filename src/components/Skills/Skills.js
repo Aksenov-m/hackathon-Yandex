@@ -3,8 +3,8 @@ import TabSkills from "../TabSkills/TabSkills";
 import BlockDescription from "../blockDescription/BlockDescription";
 import PopupInterview from "../PopupInterview/PopupInterview";
 import ButtonLink from "../buttonLink/buttonLink";
-import {rolesMentor1, rolesMentor2, rolesMentor3} from '../../utils/rolesMentor';
-import {rolesRev1} from '../../utils/rolesReviewer';
+import { rolesMentor1, rolesMentor2, rolesMentor3, rolesMentor4, rolesMentor5 } from '../../utils/rolesMentor';
+import { rolesRev1, rolesRev2, rolesRev3, rolesRev4, rolesRev5 } from '../../utils/rolesReviewer';
 import Roles from '../Roles/Roles'
 
 const Skills = ({isOpen, onClose, stopPropagation, openPopup}) => {
@@ -20,16 +20,16 @@ const Skills = ({isOpen, onClose, stopPropagation, openPopup}) => {
       setRolesReviewer(rolesRev1)
     } else if (num === 2) {
       setRolesMentor(rolesMentor2)
-      setRolesReviewer(rolesRev1)
+      setRolesReviewer(rolesRev2)
     } else if (num === 3) {
       setRolesMentor(rolesMentor3)
-      setRolesReviewer(rolesRev1)
+      setRolesReviewer(rolesRev3)
     } else if (num === 4) {
-      setRolesMentor(rolesMentor1)
-      setRolesReviewer(rolesRev1)
+      setRolesMentor(rolesMentor4)
+      setRolesReviewer(rolesRev4)
     } else if (num === 5) {
-      setRolesMentor(rolesMentor1)
-      setRolesReviewer(rolesRev1)
+      setRolesMentor(rolesMentor5)
+      setRolesReviewer(rolesRev5)
     }
   }
 
