@@ -12,7 +12,7 @@ import { Navigation } from "swiper";
 //import 'swiper/swiper-bundle.min.css';
 
 // eslint-disable-next-line react/display-name
-export default () => {
+export default ({slides}) => {
   return (
   <div class="slider__box">
     <Swiper
@@ -50,7 +50,14 @@ export default () => {
       }}
     >
     <div class="slider_slide-box">
-      <SwiperSlide>
+    {slides.map(slide =>
+      (<SwiperSlide key={slide.id}>
+        <StoriesCard title={slide.title}
+        subtitle={slide.subtitle}
+        picture={slide.picture} />
+      </SwiperSlide>
+      ))}
+      {/*<SwiperSlide>
         <StoriesCard />
       </SwiperSlide>
       <SwiperSlide>
@@ -61,7 +68,7 @@ export default () => {
       </SwiperSlide>
       <SwiperSlide>
         <StoriesCard />
-      </SwiperSlide>
+      </SwiperSlide>*/}
     </div>
     </Swiper>
   </div>
