@@ -20,20 +20,24 @@ const Main = () => {
 
   const openPopup = () => {
     setIsOpenPopupInterview(true)
+    document.body.classList.add('lock')
   }
 
   const openSearchPopup = () => {
     setIsOpenPopupSearchYou(true)
+    document.body.classList.add('lock')
   }
 
   const openResponsePopup = () => {
     setIsOpenPopupResponse(true)
+    document.body.classList.add('lock')
   }
 
   const closeAllPopup = () => {
     setIsOpenPopupInterview(false)
     setIsOpenPopupSearchYou(false)
     setIsOpenPopupResponse(false)
+    document.body.classList.remove('lock')
   }
 
   const stopPropagation = (e) => {

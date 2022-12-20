@@ -39,7 +39,7 @@ function Footer() {
                 <li class="footer__row">
                   <a
                     class="footer__link"
-                    href="#"
+                    href="https://t.me/practicum_experts"
                     target="_blank"
                     rel="noreferrer"
                   >
